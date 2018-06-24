@@ -11,3 +11,4 @@ CPU散热|猫头鹰NH-L9i
 内存| 骇客神条16GB 
 SSD | Samsung SM951 512GB 
 
+
