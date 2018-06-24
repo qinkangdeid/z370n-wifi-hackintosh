@@ -493,7 +493,7 @@
 				<key>Comment</key>
 				<string>AirPortBrcm4360 - fcvo</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				gflSqgAAdSk=
@@ -511,7 +511,7 @@
 				<key>Comment</key>
 				<string>Rename Model Wifi Module BCM94352Z</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				V2lyZWxlc3MgTmV0d29yayBBZGFwdGVyICg4MDIuMTEg
@@ -525,6 +525,26 @@
 				<data>
 				QnJvYWRjb20gQkNNOTQzNTJaIE0uMiBOR0ZGIDgwMi4x
 				MUFDIDg2N01icHM=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.11+-BT4LE-Handoff-Hotspot-lisai9093</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SIX/dEdIiwc=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.11.x</string>
+				<key>Name</key>
+				<string>IOBluetoothFamily</string>
+				<key>Replace</key>
+				<data>
+				Qb4PAAAA60Q=
 				</data>
 			</dict>
 		</array>
