@@ -44,8 +44,6 @@ SSD | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO
 
 > Chipset → DVMT Pre-Allocated :128M (if this setting isn’t showing then: 1. Set Integrated Graphics: Enabled. 
 
-2. Save and Exit BIOS by pressing F10. 3. Reenter BIOS upon computer restart and it should be there.
-
 # 升级日志
 
 
