@@ -27,21 +27,35 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change HDAS to HDEF</string>
+					<string>change EHC1 to EH01</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					SERBUw==
+					RUhDMQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					SERFRg==
+					RUgwMQ==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Rename XHCI to XHC</string>
+					<string>change EHC2 to EH02</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change XHCI to XHC</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -50,35 +64,7 @@
 					</data>
 					<key>Replace</key>
 					<data>
-					WEhD
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					U0FUMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					U0FUQQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
+					WEhDXw==
 					</data>
 				</dict>
 			</array>
@@ -183,6 +169,16 @@
 			<key>IntelGFX</key>
 			<string>0x59128086</string>
 		</dict>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<data>
+				CwAAAA==
+				</data>
+			</dict>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -260,6 +256,26 @@
 		<false/>
 		<key>KextsToPatch</key>
 		<array>
+			<dict>
+				<key>Comment</key>
+				<string>disable port limit in XHCI kext (credit PMHeart)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/sPD4MDBQAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g/sPkJCQkJCQ
+				</data>
+			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>External icons patch</string>
