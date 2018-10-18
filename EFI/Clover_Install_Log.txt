@@ -1,0 +1,36 @@
+
+Clover EFI installer log - Thu Oct 18 22:34:22 CST 2018
+Installer version: v2.4k r4700 EFI bootloader
+======================================================
+/dev/disk0 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         512.1 GB   disk0
+   1:                        EFI                         238.0 MB   disk0s1
+   2:                 Apple_APFS Container disk1         511.9 GB   disk0s2
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +511.9 GB   disk1
+                                 Physical Store disk0s2
+   1:                APFS Volume MacOS                   38.0 GB    disk1s1
+   2:                APFS Volume Preboot                 45.1 MB    disk1s2
+   3:                APFS Volume Recovery                512.4 MB   disk1s3
+   4:                APFS Volume VM                      2.1 GB     disk1s4
+   5:                APFS Volume data                    36.0 GB    disk1s5
+
+Target volume /Volumes/MacOS on disk1 is APFS on physical store disk0s2
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/MacOS/EFIROOTDIR/EFI folder to /Volumes/MacOS/EFI-Backups/r4674/2018-10-18-22h34/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
