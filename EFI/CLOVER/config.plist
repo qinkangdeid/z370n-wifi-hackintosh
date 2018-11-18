@@ -4,6 +4,8 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>AutoMerge</key>
+		<true/>
 		<key>DSDT</key>
 		<dict>
 			<key>Debug</key>
@@ -13,7 +15,7 @@
 			<key>Fixes</key>
 			<dict>
 				<key>AddDTGP</key>
-				<true/>
+				<false/>
 				<key>FixHPET</key>
 				<false/>
 				<key>FixRTC</key>
@@ -67,6 +69,20 @@
 					WEhDXw==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change XHC to XHC1111</string>
+					<key>Disabled</key>
+					<true/>
+					<key>Find</key>
+					<data>
+					WEhDXw==
+					</data>
+					<key>Replace</key>
+					<data>
+					WEhDMQ==
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -91,8 +107,10 @@
 			<key>Generate</key>
 			<dict>
 				<key>CStates</key>
-				<true/>
+				<false/>
 				<key>PStates</key>
+				<false/>
+				<key>PluginType</key>
 				<true/>
 			</dict>
 		</dict>
@@ -100,9 +118,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 -disablegfxfirmware</string>
-		<key>CustomLogo</key>
-		<string>Alternate</string>
+		<string>dart=0 nv_disable=1 debug=0x100 -disablegfxfirmware</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -112,7 +128,7 @@
 		<key>NeverHibernate</key>
 		<true/>
 		<key>NoEarlyProgress</key>
-		<true/>
+		<false/>
 		<key>RtcHibernateAware</key>
 		<false/>
 		<key>Secure</key>
@@ -142,32 +158,12 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>AddProperties</key>
-		<array>
-			<dict>
-				<key>Device</key>
-				<string>IntelGFX</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>AAPL,GfxYTile</string>
-				<key>Value</key>
-				<data>
-				CqqqAA==
-				</data>
-			</dict>
-		</array>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
 			<integer>11</integer>
 			<key>ResetHDA</key>
-			<true/>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>IntelGFX</key>
-			<string>0x59128086</string>
+			<false/>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -189,7 +185,7 @@
 			<true/>
 		</dict>
 		<key>UseIntelHDMI</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
@@ -209,14 +205,21 @@
 			<key>DoubleClick</key>
 			<integer>500</integer>
 			<key>Enabled</key>
-			<true/>
+			<false/>
 			<key>Mirror</key>
 			<false/>
 			<key>Speed</key>
 			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
-		<true/>
+		<dict>
+			<key>Entries</key>
+			<true/>
+			<key>Linux</key>
+			<true/>
+			<key>Tool</key>
+			<true/>
+		</dict>
 		<key>Theme</key>
 		<string>next-black-master</string>
 	</dict>
@@ -227,14 +230,12 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
 		<key>NvidiaSingle</key>
 		<false/>
-		<key>ig-platform-id</key>
-		<string>0x59120000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -260,7 +261,7 @@
 				<key>Comment</key>
 				<string>disable port limit in XHCI kext (credit PMHeart)</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				g/sPD4MDBQAA
@@ -280,7 +281,7 @@
 				<key>Comment</key>
 				<string>External icons patch</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				RXh0ZXJuYWw=
@@ -298,7 +299,7 @@
 				<key>Comment</key>
 				<string>Enable TRIM for SSD</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				AEFQUExFIFNTRAA=
@@ -346,13 +347,13 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM171.88Z.0157.B00.1806261148</string>
+		<string>IM181.88Z.0161.B00.1806260901</string>
 		<key>Board-ID</key>
-		<string>Mac-B809C3757DA9BB8D</string>
+		<string>Mac-4B682C642B45593E</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02648701GUF64V8C</string>
+		<string>C02719200GUF49PJC</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -364,7 +365,7 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>Family</key>
-		<string>iMac17,1</string>
+		<string>iMac</string>
 		<key>FirmwareFeatures</key>
 		<string>0xFC0FE137</string>
 		<key>FirmwareFeaturesMask</key>
@@ -378,11 +379,11 @@
 		<key>PlatformFeature</key>
 		<string>0x00</string>
 		<key>ProductName</key>
-		<string>iMac17,1</string>
+		<string>iMac18,1</string>
 		<key>SerialNumber</key>
-		<string>C02T91XAH7JY</string>
+		<string>C02TPUY3H7JY</string>
 		<key>SmUUID</key>
-		<string>DCA1E0FC-6F73-4703-9BDA-20405F46CEC8</string>
+		<string>4B49F4F5-2F56-4065-AAD9-1774D80AAA92</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

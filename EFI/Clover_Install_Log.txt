@@ -1,6 +1,6 @@
 
-Clover EFI installer log - Thu Oct 18 22:34:22 CST 2018
-Installer version: v2.4k r4700 EFI bootloader
+Clover EFI installer log - Sun Nov 11 11:21:37 CST 2018
+Installer version: v2.4k r4741 EFI bootloader
 ======================================================
 /dev/disk0 (internal):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -12,17 +12,23 @@ Installer version: v2.4k r4700 EFI bootloader
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      APFS Container Scheme -                      +511.9 GB   disk1
                                  Physical Store disk0s2
-   1:                APFS Volume MacOS                   38.0 GB    disk1s1
-   2:                APFS Volume Preboot                 45.1 MB    disk1s2
-   3:                APFS Volume Recovery                512.4 MB   disk1s3
+   1:                APFS Volume MacOS                   18.7 GB    disk1s1
+   2:                APFS Volume Preboot                 45.4 MB    disk1s2
+   3:                APFS Volume Recovery                512.8 MB   disk1s3
    4:                APFS Volume VM                      2.1 GB     disk1s4
-   5:                APFS Volume data                    36.0 GB    disk1s5
+   5:                APFS Volume data                    70.1 MB    disk1s5
+
+/dev/disk2 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *15.7 GB    disk2
+   1:               Windows_NTFS 微PE工具箱              15.0 GB    disk2s1
+   2:                 DOS_FAT_16 EFI                     312.5 MB   disk2s2
 
 Target volume /Volumes/MacOS on disk1 is APFS on physical store disk0s2
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/MacOS/EFIROOTDIR/EFI folder to /Volumes/MacOS/EFI-Backups/r4674/2018-10-18-22h34/EFI
+Backing up /Volumes/MacOS/EFIROOTDIR/EFI folder to /Volumes/MacOS/EFI-Backups/r4700/2018-11-11-11h21/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
