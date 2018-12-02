@@ -1,160 +1,162 @@
-15:974  4:493  Found BIOS RSDP at F05B0
-15:974  0:000  Printing ACPI tables from RSDP F05B0 ...
-15:974  0:000   F05B0: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
-15:974  0:000    (Rsdt: C50FB028)
-15:974  0:000    C50FB028: 'RSDT', 'A M I', Rev: 1, Len: 128
-15:974  0:000    Tables in Rsdt: 23
-15:974  0:000    0. C50FB198: 'FACP', 'A M I', Rev: 2, Len: 132
-15:974  0:000        (Dsdt: C50FB220, Facs: C54A4EC0)
-15:974  0:000        C50FB220: 'DSDT', 'A M I', Rev: 2, Len: 161478
-15:976  0:001        C54A4EC0: 'FACS', Ver: 0, Len: 64
-15:976  0:000    1. C5122A00: 'APIC', 'A M I', Rev: 3, Len: 244
-15:976  0:000    2. C5122AF8: 'FPDT', 'A M I', Rev: 1, Len: 68
-15:976  0:000    3. C5122B40: 'FIDT', 'A M I', Rev: 1, Len: 156
-15:976  0:000    4. C5122BE0: 'MCFG', 'A M I', Rev: 1, Len: 60
-15:976  0:000    5. C5122C20: 'SSDT', 'A M I', Rev: 1, Len: 931
-15:976  0:000    6. C5122FC8: 'SSDT', 'A M I', Rev: 1, Len: 28853
-15:976  0:000    7. C512A080: 'SSDT', 'A M I', Rev: 2, Len: 12645
-15:976  0:000    8. C512D1E8: 'HPET', 'A M I', Rev: 1, Len: 56
-15:976  0:000    9. C512D220: 'SSDT', 'A M I', Rev: 2, Len: 4522
-15:976  0:000    10. C512E3D0: 'SSDT', 'A M I', Rev: 2, Len: 10967
-15:976  0:000    11. C5130EA8: 'UEFI', 'A M I', Rev: 1, Len: 72
-15:976  0:000    12. C5130EF0: 'SSDT', 'A M I', Rev: 2, Len: 6062
-15:976  0:000    13. C51326A0: 'LPIT', 'A M I', Rev: 1, Len: 148
-15:976  0:000    14. C5132738: 'SSDT', 'A M I', Rev: 2, Len: 321
-15:976  0:000    15. C5132880: 'SSDT', 'A M I', Rev: 2, Len: 671
-15:976  0:000    16. C5132B20: 'SSDT', 'A M I', Rev: 2, Len: 12290
-15:976  0:000    17. C5135B28: 'SSDT', 'A M I', Rev: 2, Len: 1303
-15:976  0:000    18. C5136040: 'SSDT', 'A M I', Rev: 2, Len: 745
-15:976  0:000    19. C5136330: 'DBGP', 'A M I', Rev: 1, Len: 52
-15:976  0:000    20. C5136368: 'DBG2', 'A M I', Rev: 0, Len: 84
-15:976  0:000    21. C51363C0: 'BGRT', 'A M I', Rev: 1, Len: 56
-15:976  0:000    22. C51363F8: 'WSMT', 'A M I', Rev: 1, Len: 40
-15:976  0:000  Found UEFI Acpi 2.0 RSDP at C50FB000
-15:976  0:000  Saving ACPI tables from RSDP C50FB000 to EFI\CLOVER\ACPI\origin ...
-15:976  0:000   C50FB000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
-15:990  0:013    (Xsdt: C50FB0B0, Rsdt: C50FB028)
-15:990  0:000    C50FB0B0: 'XSDT', 'A M I', Rev: 1, Len: 220 -> XSDT.aml
-15:996  0:006    C50FB028: 'RSDT', 'A M I', Rev: 1, Len: 128 -> RSDT.aml
-16:005  0:009    Tables in Xsdt: 23
-16:005  0:000    0. C51228E8: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
-16:012  0:006        (Dsdt: C50FB220, Facs: C54A4F00, XDsdt: C50FB220, XFacs: 0)
-16:012  0:000        C50FB220: 'DSDT', 'A M I', Rev: 2, Len: 161478 -> DSDT.aml
-16:027  0:014        C54A4F00: 'FACS', Ver: 2, Len: 64 -> FACS.aml
-16:033  0:006    1. C5122A00: 'APIC', 'A M I', Rev: 3, Len: 244 -> APIC.aml
-16:042  0:009    2. C5122AF8: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
-16:049  0:006    3. C5122B40: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
-16:058  0:008    4. C5122BE0: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
-16:070  0:011    5. C5122C20: 'SSDT', 'A M I', Rev: 1, Len: 931 -> SSDT-0-A M I.aml
-16:077  0:006    6. C5122FC8: 'SSDT', 'A M I', Rev: 1, Len: 28853 -> SSDT-1-A M I.aml
-16:088  0:011    7. C512A080: 'SSDT', 'A M I', Rev: 2, Len: 12645 -> SSDT-2-A M I.aml
-16:095  0:006    8. C512D1E8: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
-16:104  0:008    9. C512D220: 'SSDT', 'A M I', Rev: 2, Len: 4522 -> SSDT-3-A M I.aml
-16:110  0:006    10. C512E3D0: 'SSDT', 'A M I', Rev: 2, Len: 10967 -> SSDT-4-A M I.aml
-16:119  0:009    11. C5130EA8: 'UEFI', 'A M I', Rev: 1, Len: 72 -> UEFI.aml
-16:126  0:006    12. C5130EF0: 'SSDT', 'A M I', Rev: 2, Len: 6062 -> SSDT-5-A M I.aml (Found hidden SSDT 7 pcs)
-16:139  0:012        * C4F9B098: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1914  53 53 44 54 7A 07 00 00 02 F8 50 6D 52 65 66 00 Internal length = 1914 -> SSDT-x5_0-Cpu0Ist.aml
-16:148  0:009        * C4F6C018: 'SSDT', 'ApIst', Rev: 2, Len: 3348  53 53 44 54 14 0D 00 00 02 30 50 6D 52 65 66 00 Internal length = 3348 -> SSDT-x5_1-ApIst.aml
-16:157  0:008        * C4F6B018: 'SSDT', 'Cpu0Cst', Rev: 2, Len: 1023  53 53 44 54 FF 03 00 00 02 17 50 6D 52 65 66 00 Internal length = 1023 -> SSDT-x5_2-Cpu0Cst.aml
-16:164  0:006        * C4F6D798: 'SSDT', 'ApCst', Rev: 2, Len: 778  53 53 44 54 0A 03 00 00 02 99 50 6D 52 65 66 00 Internal length = 778 -> SSDT-x5_3-ApCst.aml
-16:173  0:008        * C4F6D018: 'SSDT', 'Cpu0Hwp', Rev: 2, Len: 186  53 53 44 54 BA 00 00 00 02 83 50 6D 52 65 66 00 Internal length = 186 -> SSDT-x5_4-Cpu0Hwp.aml
-16:179  0:006        * C4F6DB98: 'SSDT', 'ApHwp', Rev: 2, Len: 791  53 53 44 54 17 03 00 00 02 86 50 6D 52 65 66 00 Internal length = 791 -> SSDT-x5_5-ApHwp.aml
-16:186  0:006        * C4F6D118: 'SSDT', 'HwpLvt', Rev: 2, Len: 1576  53 53 44 54 28 06 00 00 02 8B 50 6D 52 65 66 00 Internal length = 1576 -> SSDT-x5_6-HwpLvt.aml
-16:196  0:009  
-16:196  0:000    13. C51326A0: 'LPIT', 'A M I', Rev: 1, Len: 148 -> LPIT.aml
-16:202  0:006    14. C5132738: 'SSDT', 'A M I', Rev: 2, Len: 321 -> SSDT-6-A M I.aml
-16:209  0:006    15. C5132880: 'SSDT', 'A M I', Rev: 2, Len: 671 -> SSDT-7-A M I.aml
-16:215  0:006    16. C5132B20: 'SSDT', 'A M I', Rev: 2, Len: 12290 -> SSDT-8-A M I.aml
-16:225  0:010    17. C5135B28: 'SSDT', 'A M I', Rev: 2, Len: 1303 -> SSDT-9-A M I.aml
-16:232  0:006    18. C5136040: 'SSDT', 'A M I', Rev: 2, Len: 745 -> SSDT-10-A M I.aml
-16:244  0:012    19. C5136330: 'DBGP', 'A M I', Rev: 1, Len: 52 -> DBGP.aml
-16:251  0:006    20. C5136368: 'DBG2', 'A M I', Rev: 0, Len: 84 -> DBG2.aml
-16:260  0:009    21. C51363C0: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
-16:267  0:006    22. C51363F8: 'WSMT', 'A M I', Rev: 1, Len: 40 -> WSMT.aml
-16:273  0:006    Tables in Rsdt: 23
-16:273  0:000    0. C50FB198: 'FACP', 'A M I', Rev: 2, Len: 132 -> RSDT-FACP.aml
-16:280  0:006        (Dsdt: C50FB220, Facs: C54A4EC0)
-16:280  0:000        C50FB220: 'DSDT', 'A M I', Rev: 2, Len: 161478
-16:282  0:001        C54A4EC0: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
-16:291  0:009    1. C5122A00: 'APIC', 'A M I', Rev: 3, Len: 244
-16:291  0:000    2. C5122AF8: 'FPDT', 'A M I', Rev: 1, Len: 68
-16:291  0:000    3. C5122B40: 'FIDT', 'A M I', Rev: 1, Len: 156
-16:291  0:000    4. C5122BE0: 'MCFG', 'A M I', Rev: 1, Len: 60
-16:291  0:000    5. C5122C20: 'SSDT', 'A M I', Rev: 1, Len: 931
-16:291  0:000    6. C5122FC8: 'SSDT', 'A M I', Rev: 1, Len: 28853
-16:291  0:000    7. C512A080: 'SSDT', 'A M I', Rev: 2, Len: 12645
-16:291  0:000    8. C512D1E8: 'HPET', 'A M I', Rev: 1, Len: 56
-16:291  0:000    9. C512D220: 'SSDT', 'A M I', Rev: 2, Len: 4522
-16:291  0:000    10. C512E3D0: 'SSDT', 'A M I', Rev: 2, Len: 10967
-16:291  0:000    11. C5130EA8: 'UEFI', 'A M I', Rev: 1, Len: 72
-16:291  0:000    12. C5130EF0: 'SSDT', 'A M I', Rev: 2, Len: 6062
-16:291  0:000    13. C51326A0: 'LPIT', 'A M I', Rev: 1, Len: 148
-16:291  0:000    14. C5132738: 'SSDT', 'A M I', Rev: 2, Len: 321
-16:291  0:000    15. C5132880: 'SSDT', 'A M I', Rev: 2, Len: 671
-16:291  0:000    16. C5132B20: 'SSDT', 'A M I', Rev: 2, Len: 12290
-16:291  0:000    17. C5135B28: 'SSDT', 'A M I', Rev: 2, Len: 1303
-16:291  0:000    18. C5136040: 'SSDT', 'A M I', Rev: 2, Len: 745
-16:291  0:000    19. C5136330: 'DBGP', 'A M I', Rev: 1, Len: 52
-16:291  0:000    20. C5136368: 'DBG2', 'A M I', Rev: 0, Len: 84
-16:291  0:000    21. C51363C0: 'BGRT', 'A M I', Rev: 1, Len: 56
-16:291  0:000    22. C51363F8: 'WSMT', 'A M I', Rev: 1, Len: 40
-16:291  0:000  Found UEFI Acpi 1.0 RSDP at C50FB000
-16:291  0:000  Printing ACPI tables from RSDP C50FB000 ...
-16:291  0:000   C50FB000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
-16:291  0:000    (Xsdt: C50FB0B0, Rsdt: C50FB028)
-16:291  0:000    C50FB0B0: 'XSDT', 'A M I', Rev: 1, Len: 220
-16:291  0:000    C50FB028: 'RSDT', 'A M I', Rev: 1, Len: 128
-16:291  0:000    Tables in Xsdt: 23
-16:291  0:000    0. C51228E8: 'FACP', 'A M I', Rev: 6, Len: 276
-16:291  0:000        (Dsdt: C50FB220, Facs: C54A4F00, XDsdt: C50FB220, XFacs: 0)
-16:291  0:000        C50FB220: 'DSDT', 'A M I', Rev: 2, Len: 161478
-16:293  0:001        C54A4F00: 'FACS', Ver: 2, Len: 64
-16:293  0:000    1. C5122A00: 'APIC', 'A M I', Rev: 3, Len: 244
-16:293  0:000    2. C5122AF8: 'FPDT', 'A M I', Rev: 1, Len: 68
-16:293  0:000    3. C5122B40: 'FIDT', 'A M I', Rev: 1, Len: 156
-16:293  0:000    4. C5122BE0: 'MCFG', 'A M I', Rev: 1, Len: 60
-16:293  0:000    5. C5122C20: 'SSDT', 'A M I', Rev: 1, Len: 931
-16:293  0:000    6. C5122FC8: 'SSDT', 'A M I', Rev: 1, Len: 28853
-16:293  0:000    7. C512A080: 'SSDT', 'A M I', Rev: 2, Len: 12645
-16:293  0:000    8. C512D1E8: 'HPET', 'A M I', Rev: 1, Len: 56
-16:293  0:000    9. C512D220: 'SSDT', 'A M I', Rev: 2, Len: 4522
-16:293  0:000    10. C512E3D0: 'SSDT', 'A M I', Rev: 2, Len: 10967
-16:293  0:000    11. C5130EA8: 'UEFI', 'A M I', Rev: 1, Len: 72
-16:293  0:000    12. C5130EF0: 'SSDT', 'A M I', Rev: 2, Len: 6062
-16:293  0:000    13. C51326A0: 'LPIT', 'A M I', Rev: 1, Len: 148
-16:293  0:000    14. C5132738: 'SSDT', 'A M I', Rev: 2, Len: 321
-16:293  0:000    15. C5132880: 'SSDT', 'A M I', Rev: 2, Len: 671
-16:293  0:000    16. C5132B20: 'SSDT', 'A M I', Rev: 2, Len: 12290
-16:293  0:000    17. C5135B28: 'SSDT', 'A M I', Rev: 2, Len: 1303
-16:293  0:000    18. C5136040: 'SSDT', 'A M I', Rev: 2, Len: 745
-16:293  0:000    19. C5136330: 'DBGP', 'A M I', Rev: 1, Len: 52
-16:293  0:000    20. C5136368: 'DBG2', 'A M I', Rev: 0, Len: 84
-16:293  0:000    21. C51363C0: 'BGRT', 'A M I', Rev: 1, Len: 56
-16:293  0:000    22. C51363F8: 'WSMT', 'A M I', Rev: 1, Len: 40
-16:293  0:000    Tables in Rsdt: 23
-16:293  0:000    0. C50FB198: 'FACP', 'A M I', Rev: 2, Len: 132
-16:293  0:000        (Dsdt: C50FB220, Facs: C54A4EC0)
-16:293  0:000        C50FB220: 'DSDT', 'A M I', Rev: 2, Len: 161478
-16:295  0:001        C54A4EC0: 'FACS', Ver: 0, Len: 64
-16:295  0:000    1. C5122A00: 'APIC', 'A M I', Rev: 3, Len: 244
-16:295  0:000    2. C5122AF8: 'FPDT', 'A M I', Rev: 1, Len: 68
-16:295  0:000    3. C5122B40: 'FIDT', 'A M I', Rev: 1, Len: 156
-16:295  0:000    4. C5122BE0: 'MCFG', 'A M I', Rev: 1, Len: 60
-16:295  0:000    5. C5122C20: 'SSDT', 'A M I', Rev: 1, Len: 931
-16:295  0:000    6. C5122FC8: 'SSDT', 'A M I', Rev: 1, Len: 28853
-16:295  0:000    7. C512A080: 'SSDT', 'A M I', Rev: 2, Len: 12645
-16:295  0:000    8. C512D1E8: 'HPET', 'A M I', Rev: 1, Len: 56
-16:295  0:000    9. C512D220: 'SSDT', 'A M I', Rev: 2, Len: 4522
-16:295  0:000    10. C512E3D0: 'SSDT', 'A M I', Rev: 2, Len: 10967
-16:295  0:000    11. C5130EA8: 'UEFI', 'A M I', Rev: 1, Len: 72
-16:295  0:000    12. C5130EF0: 'SSDT', 'A M I', Rev: 2, Len: 6062
-16:295  0:000    13. C51326A0: 'LPIT', 'A M I', Rev: 1, Len: 148
-16:295  0:000    14. C5132738: 'SSDT', 'A M I', Rev: 2, Len: 321
-16:295  0:000    15. C5132880: 'SSDT', 'A M I', Rev: 2, Len: 671
-16:295  0:000    16. C5132B20: 'SSDT', 'A M I', Rev: 2, Len: 12290
-16:295  0:000    17. C5135B28: 'SSDT', 'A M I', Rev: 2, Len: 1303
-16:295  0:000    18. C5136040: 'SSDT', 'A M I', Rev: 2, Len: 745
-16:295  0:000    19. C5136330: 'DBGP', 'A M I', Rev: 1, Len: 52
-16:295  0:000    20. C5136368: 'DBG2', 'A M I', Rev: 0, Len: 84
-16:295  0:000    21. C51363C0: 'BGRT', 'A M I', Rev: 1, Len: 56
-16:295  0:000    22. C51363F8: 'WSMT', 'A M I', Rev: 1, Len: 40
+11:460  0:172  Found BIOS RSDP at F05B0
+11:460  0:000  Printing ACPI tables from RSDP F05B0 ...
+11:460  0:000   F05B0: 'RSD PTR ', Rev: 0 (Acpi 1.0), Len: 20
+11:460  0:000    (Rsdt: B50A4028)
+11:460  0:000    B50A4028: 'RSDT', 'A M I', Rev: 1, Len: 136
+11:460  0:000    Tables in Rsdt: 25
+11:460  0:000    0. B50A41B0: 'FACP', 'A M I', Rev: 2, Len: 132
+11:460  0:000        (Dsdt: B50A4238, Facs: B5451EC0)
+11:460  0:000        B50A4238: 'DSDT', 'A M I', Rev: 2, Len: 161478
+11:462  0:002        B5451EC0: 'FACS', Ver: 0, Len: 64
+11:462  0:000    1. B50CBA18: 'APIC', 'A M I', Rev: 3, Len: 244
+11:462  0:000    2. B50CBB10: 'FPDT', 'A M I', Rev: 1, Len: 68
+11:462  0:000    3. B50CBB58: 'FIDT', 'A M I', Rev: 1, Len: 156
+11:462  0:000    4. B50CBBF8: 'MCFG', 'A M I', Rev: 1, Len: 60
+11:462  0:000    5. B50CBC38: 'SSDT', 'A M I', Rev: 1, Len: 931
+11:462  0:000    6. B50CBFE0: 'SSDT', 'A M I', Rev: 1, Len: 28853
+11:462  0:000    7. B50D3098: 'SSDT', 'A M I', Rev: 2, Len: 12645
+11:462  0:000    8. B50D6200: 'SSDT', 'A M I', Rev: 2, Len: 10051
+11:462  0:000    9. B50D8948: 'HPET', 'A M I', Rev: 1, Len: 56
+11:462  0:000    10. B50D8980: 'SSDT', 'A M I', Rev: 2, Len: 4522
+11:462  0:000    11. B50D9B30: 'SSDT', 'A M I', Rev: 2, Len: 10967
+11:462  0:000    12. B50DC608: 'UEFI', 'A M I', Rev: 1, Len: 72
+11:462  0:000    13. B50DC650: 'SSDT', 'A M I', Rev: 2, Len: 6062
+11:462  0:000    14. B50DDE00: 'LPIT', 'A M I', Rev: 1, Len: 148
+11:462  0:000    15. B50DDE98: 'SSDT', 'A M I', Rev: 2, Len: 321
+11:462  0:000    16. B50DDFE0: 'SSDT', 'A M I', Rev: 2, Len: 671
+11:462  0:000    17. B50DE280: 'SSDT', 'A M I', Rev: 2, Len: 12290
+11:462  0:000    18. B50E1288: 'SSDT', 'A M I', Rev: 2, Len: 1303
+11:462  0:000    19. B50E17A0: 'SSDT', 'A M I', Rev: 2, Len: 745
+11:462  0:000    20. B50E1A90: 'DBGP', 'A M I', Rev: 1, Len: 52
+11:462  0:000    21. B50E1AC8: 'DBG2', 'A M I', Rev: 0, Len: 84
+11:462  0:000    22. B50E1B20: 'DMAR', 'A M I', Rev: 1, Len: 168
+11:462  0:000    23. B50E1BC8: 'BGRT', 'A M I', Rev: 1, Len: 56
+11:462  0:000    24. B50E1C00: 'WSMT', 'A M I', Rev: 1, Len: 40
+11:462  0:000  Found UEFI Acpi 2.0 RSDP at B50A4000
+11:462  0:000  Saving ACPI tables from RSDP B50A4000 to EFI\CLOVER\ACPI\origin ...
+11:462  0:000   B50A4000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+11:462  0:000    (Xsdt: B50A40B8, Rsdt: B50A4028)
+11:462  0:000    B50A40B8: 'XSDT', 'A M I', Rev: 1, Len: 236
+11:462  0:000    B50A4028: 'RSDT', 'A M I', Rev: 1, Len: 136
+11:462  0:000    Tables in Xsdt: 25
+11:462  0:000    0. B50CB900: 'FACP', 'A M I', Rev: 6, Len: 276
+11:462  0:000        (Dsdt: B50A4238, Facs: B5451F00, XDsdt: B50A4238, XFacs: 0)
+11:462  0:000        B50A4238: 'DSDT', 'A M I', Rev: 2, Len: 161478
+11:464  0:001        B5451F00: 'FACS', Ver: 2, Len: 64
+11:464  0:000    1. B50CBA18: 'APIC', 'A M I', Rev: 3, Len: 244
+11:464  0:000    2. B50CBB10: 'FPDT', 'A M I', Rev: 1, Len: 68
+11:464  0:000    3. B50CBB58: 'FIDT', 'A M I', Rev: 1, Len: 156
+11:464  0:000    4. B50CBBF8: 'MCFG', 'A M I', Rev: 1, Len: 60
+11:464  0:000    5. B50CBC38: 'SSDT', 'A M I', Rev: 1, Len: 931
+11:464  0:000    6. B50CBFE0: 'SSDT', 'A M I', Rev: 1, Len: 28853
+11:464  0:000    7. B50D3098: 'SSDT', 'A M I', Rev: 2, Len: 12645
+11:464  0:000    8. B50D6200: 'SSDT', 'A M I', Rev: 2, Len: 10051
+11:464  0:000    9. B50D8948: 'HPET', 'A M I', Rev: 1, Len: 56
+11:464  0:000    10. B50D8980: 'SSDT', 'A M I', Rev: 2, Len: 4522
+11:464  0:000    11. B50D9B30: 'SSDT', 'A M I', Rev: 2, Len: 10967
+11:464  0:000    12. B50DC608: 'UEFI', 'A M I', Rev: 1, Len: 72
+11:464  0:000    13. B50DC650: 'SSDT', 'A M I', Rev: 2, Len: 6062
+11:464  0:000    14. B50DDE00: 'LPIT', 'A M I', Rev: 1, Len: 148
+11:464  0:000    15. B50DDE98: 'SSDT', 'A M I', Rev: 2, Len: 321
+11:464  0:000    16. B50DDFE0: 'SSDT', 'A M I', Rev: 2, Len: 671
+11:464  0:000    17. B50DE280: 'SSDT', 'A M I', Rev: 2, Len: 12290
+11:464  0:000    18. B50E1288: 'SSDT', 'A M I', Rev: 2, Len: 1303
+11:464  0:000    19. B50E17A0: 'SSDT', 'A M I', Rev: 2, Len: 745
+11:464  0:000    20. B50E1A90: 'DBGP', 'A M I', Rev: 1, Len: 52
+11:464  0:000    21. B50E1AC8: 'DBG2', 'A M I', Rev: 0, Len: 84
+11:464  0:000    22. B50E1B20: 'DMAR', 'A M I', Rev: 1, Len: 168
+11:464  0:000    23. B50E1BC8: 'BGRT', 'A M I', Rev: 1, Len: 56
+11:464  0:000    24. B50E1C00: 'WSMT', 'A M I', Rev: 1, Len: 40
+11:464  0:000    Tables in Rsdt: 25
+11:464  0:000    0. B50A41B0: 'FACP', 'A M I', Rev: 2, Len: 132
+11:464  0:000        (Dsdt: B50A4238, Facs: B5451EC0)
+11:464  0:000        B50A4238: 'DSDT', 'A M I', Rev: 2, Len: 161478
+11:466  0:001        B5451EC0: 'FACS', Ver: 0, Len: 64
+11:466  0:000    1. B50CBA18: 'APIC', 'A M I', Rev: 3, Len: 244
+11:466  0:000    2. B50CBB10: 'FPDT', 'A M I', Rev: 1, Len: 68
+11:466  0:000    3. B50CBB58: 'FIDT', 'A M I', Rev: 1, Len: 156
+11:466  0:000    4. B50CBBF8: 'MCFG', 'A M I', Rev: 1, Len: 60
+11:466  0:000    5. B50CBC38: 'SSDT', 'A M I', Rev: 1, Len: 931
+11:466  0:000    6. B50CBFE0: 'SSDT', 'A M I', Rev: 1, Len: 28853
+11:466  0:000    7. B50D3098: 'SSDT', 'A M I', Rev: 2, Len: 12645
+11:466  0:000    8. B50D6200: 'SSDT', 'A M I', Rev: 2, Len: 10051
+11:466  0:000    9. B50D8948: 'HPET', 'A M I', Rev: 1, Len: 56
+11:466  0:000    10. B50D8980: 'SSDT', 'A M I', Rev: 2, Len: 4522
+11:466  0:000    11. B50D9B30: 'SSDT', 'A M I', Rev: 2, Len: 10967
+11:466  0:000    12. B50DC608: 'UEFI', 'A M I', Rev: 1, Len: 72
+11:466  0:000    13. B50DC650: 'SSDT', 'A M I', Rev: 2, Len: 6062
+11:466  0:000    14. B50DDE00: 'LPIT', 'A M I', Rev: 1, Len: 148
+11:466  0:000    15. B50DDE98: 'SSDT', 'A M I', Rev: 2, Len: 321
+11:466  0:000    16. B50DDFE0: 'SSDT', 'A M I', Rev: 2, Len: 671
+11:466  0:000    17. B50DE280: 'SSDT', 'A M I', Rev: 2, Len: 12290
+11:466  0:000    18. B50E1288: 'SSDT', 'A M I', Rev: 2, Len: 1303
+11:466  0:000    19. B50E17A0: 'SSDT', 'A M I', Rev: 2, Len: 745
+11:466  0:000    20. B50E1A90: 'DBGP', 'A M I', Rev: 1, Len: 52
+11:466  0:000    21. B50E1AC8: 'DBG2', 'A M I', Rev: 0, Len: 84
+11:466  0:000    22. B50E1B20: 'DMAR', 'A M I', Rev: 1, Len: 168
+11:466  0:000    23. B50E1BC8: 'BGRT', 'A M I', Rev: 1, Len: 56
+11:466  0:000    24. B50E1C00: 'WSMT', 'A M I', Rev: 1, Len: 40
+11:466  0:000  Found UEFI Acpi 1.0 RSDP at B50A4000
+11:466  0:000  Printing ACPI tables from RSDP B50A4000 ...
+11:466  0:000   B50A4000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+11:466  0:000    (Xsdt: B50A40B8, Rsdt: B50A4028)
+11:466  0:000    B50A40B8: 'XSDT', 'A M I', Rev: 1, Len: 236
+11:466  0:000    B50A4028: 'RSDT', 'A M I', Rev: 1, Len: 136
+11:466  0:000    Tables in Xsdt: 25
+11:466  0:000    0. B50CB900: 'FACP', 'A M I', Rev: 6, Len: 276
+11:466  0:000        (Dsdt: B50A4238, Facs: B5451F00, XDsdt: B50A4238, XFacs: 0)
+11:466  0:000        B50A4238: 'DSDT', 'A M I', Rev: 2, Len: 161478
+11:468  0:001        B5451F00: 'FACS', Ver: 2, Len: 64
+11:468  0:000    1. B50CBA18: 'APIC', 'A M I', Rev: 3, Len: 244
+11:468  0:000    2. B50CBB10: 'FPDT', 'A M I', Rev: 1, Len: 68
+11:468  0:000    3. B50CBB58: 'FIDT', 'A M I', Rev: 1, Len: 156
+11:468  0:000    4. B50CBBF8: 'MCFG', 'A M I', Rev: 1, Len: 60
+11:468  0:000    5. B50CBC38: 'SSDT', 'A M I', Rev: 1, Len: 931
+11:468  0:000    6. B50CBFE0: 'SSDT', 'A M I', Rev: 1, Len: 28853
+11:468  0:000    7. B50D3098: 'SSDT', 'A M I', Rev: 2, Len: 12645
+11:468  0:000    8. B50D6200: 'SSDT', 'A M I', Rev: 2, Len: 10051
+11:468  0:000    9. B50D8948: 'HPET', 'A M I', Rev: 1, Len: 56
+11:468  0:000    10. B50D8980: 'SSDT', 'A M I', Rev: 2, Len: 4522
+11:468  0:000    11. B50D9B30: 'SSDT', 'A M I', Rev: 2, Len: 10967
+11:468  0:000    12. B50DC608: 'UEFI', 'A M I', Rev: 1, Len: 72
+11:468  0:000    13. B50DC650: 'SSDT', 'A M I', Rev: 2, Len: 6062
+11:468  0:000    14. B50DDE00: 'LPIT', 'A M I', Rev: 1, Len: 148
+11:468  0:000    15. B50DDE98: 'SSDT', 'A M I', Rev: 2, Len: 321
+11:468  0:000    16. B50DDFE0: 'SSDT', 'A M I', Rev: 2, Len: 671
+11:468  0:000    17. B50DE280: 'SSDT', 'A M I', Rev: 2, Len: 12290
+11:468  0:000    18. B50E1288: 'SSDT', 'A M I', Rev: 2, Len: 1303
+11:468  0:000    19. B50E17A0: 'SSDT', 'A M I', Rev: 2, Len: 745
+11:468  0:000    20. B50E1A90: 'DBGP', 'A M I', Rev: 1, Len: 52
+11:468  0:000    21. B50E1AC8: 'DBG2', 'A M I', Rev: 0, Len: 84
+11:468  0:000    22. B50E1B20: 'DMAR', 'A M I', Rev: 1, Len: 168
+11:468  0:000    23. B50E1BC8: 'BGRT', 'A M I', Rev: 1, Len: 56
+11:468  0:000    24. B50E1C00: 'WSMT', 'A M I', Rev: 1, Len: 40
+11:468  0:000    Tables in Rsdt: 25
+11:468  0:000    0. B50A41B0: 'FACP', 'A M I', Rev: 2, Len: 132
+11:468  0:000        (Dsdt: B50A4238, Facs: B5451EC0)
+11:468  0:000        B50A4238: 'DSDT', 'A M I', Rev: 2, Len: 161478
+11:470  0:001        B5451EC0: 'FACS', Ver: 0, Len: 64
+11:470  0:000    1. B50CBA18: 'APIC', 'A M I', Rev: 3, Len: 244
+11:470  0:000    2. B50CBB10: 'FPDT', 'A M I', Rev: 1, Len: 68
+11:470  0:000    3. B50CBB58: 'FIDT', 'A M I', Rev: 1, Len: 156
+11:470  0:000    4. B50CBBF8: 'MCFG', 'A M I', Rev: 1, Len: 60
+11:470  0:000    5. B50CBC38: 'SSDT', 'A M I', Rev: 1, Len: 931
+11:470  0:000    6. B50CBFE0: 'SSDT', 'A M I', Rev: 1, Len: 28853
+11:470  0:000    7. B50D3098: 'SSDT', 'A M I', Rev: 2, Len: 12645
+11:470  0:000    8. B50D6200: 'SSDT', 'A M I', Rev: 2, Len: 10051
+11:470  0:000    9. B50D8948: 'HPET', 'A M I', Rev: 1, Len: 56
+11:470  0:000    10. B50D8980: 'SSDT', 'A M I', Rev: 2, Len: 4522
+11:470  0:000    11. B50D9B30: 'SSDT', 'A M I', Rev: 2, Len: 10967
+11:470  0:000    12. B50DC608: 'UEFI', 'A M I', Rev: 1, Len: 72
+11:470  0:000    13. B50DC650: 'SSDT', 'A M I', Rev: 2, Len: 6062
+11:470  0:000    14. B50DDE00: 'LPIT', 'A M I', Rev: 1, Len: 148
+11:470  0:000    15. B50DDE98: 'SSDT', 'A M I', Rev: 2, Len: 321
+11:470  0:000    16. B50DDFE0: 'SSDT', 'A M I', Rev: 2, Len: 671
+11:470  0:000    17. B50DE280: 'SSDT', 'A M I', Rev: 2, Len: 12290
+11:470  0:000    18. B50E1288: 'SSDT', 'A M I', Rev: 2, Len: 1303
+11:470  0:000    19. B50E17A0: 'SSDT', 'A M I', Rev: 2, Len: 745
+11:470  0:000    20. B50E1A90: 'DBGP', 'A M I', Rev: 1, Len: 52
+11:470  0:000    21. B50E1AC8: 'DBG2', 'A M I', Rev: 0, Len: 84
+11:470  0:000    22. B50E1B20: 'DMAR', 'A M I', Rev: 1, Len: 168
+11:470  0:000    23. B50E1BC8: 'BGRT', 'A M I', Rev: 1, Len: 56
+11:470  0:000    24. B50E1C00: 'WSMT', 'A M I', Rev: 1, Len: 40

@@ -1,40 +1,33 @@
 
-Clover EFI installer log - Sun Nov 25 16:44:34 CST 2018
-Installer version: v2.4k r4769 EFI bootloader
+Clover EFI installer log - Sun Dec  2 17:54:47 CST 2018
+Installer version: v2.4k r4784 EFI bootloader
 ======================================================
 /dev/disk0 (internal):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                         512.1 GB   disk0
-   1:                        EFI u                       238.0 MB   disk0s1
+   1:                        EFI ESP                     238.0 MB   disk0s1
    2:                 Apple_APFS Container disk1         511.9 GB   disk0s2
 
 /dev/disk1 (synthesized):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      APFS Container Scheme -                      +511.9 GB   disk1
                                  Physical Store disk0s2
-   1:                APFS Volume MacOS                   35.6 GB    disk1s1
+   1:                APFS Volume MacOS                   30.2 GB    disk1s1
    2:                APFS Volume Preboot                 45.4 MB    disk1s2
    3:                APFS Volume Recovery                512.8 MB   disk1s3
-   4:                APFS Volume VM                      2.1 GB     disk1s4
-   5:                APFS Volume data                    30.3 GB    disk1s5
-
-/dev/disk2 (external, physical):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:     FDisk_partition_scheme                        *62.7 GB    disk2
-   1:               Windows_NTFS                         62.7 GB    disk2s1
+   4:                APFS Volume VM                      3.2 GB     disk1s4
+   5:                APFS Volume data                    30.4 GB    disk1s5
 
 Target volume /Volumes/MacOS on disk1 is APFS on physical store disk0s2
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/MacOS/EFIROOTDIR/EFI folder to /Volumes/MacOS/EFI-Backups/r4741/2018-11-25-16h44/EFI
+Backing up /Volumes/MacOS/EFIROOTDIR/EFI folder to /Volumes/MacOS/EFI-Backups/r4769/2018-12-02-17h54/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
 Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
 Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
-
-Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
 
 ======================================================
 =========== Clover EFI Installation Finish ===========
