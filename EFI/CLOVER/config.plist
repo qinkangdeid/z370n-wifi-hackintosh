@@ -160,8 +160,6 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
-		<key>Arguments</key>
-		<string>darkwake=no</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
@@ -190,6 +188,11 @@
 			<integer>7</integer>
 			<key>ResetHDA</key>
 			<true/>
+		</dict>
+		<key>FakeID</key>
+		<dict>
+			<key>IntelGFX</key>
+			<string>0x3E918086</string>
 		</dict>
 		<key>LANInjection</key>
 		<false/>
@@ -349,6 +352,8 @@
 		</dict>
 		<key>NvidiaSingle</key>
 		<false/>
+		<key>ig-platform-id</key>
+		<string>0x3E9B0007</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
