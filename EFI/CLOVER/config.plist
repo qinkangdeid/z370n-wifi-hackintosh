@@ -160,6 +160,8 @@
 	</dict>
 	<key>Boot</key>
 	<dict>
+		<key>Arguments</key>
+		<string>darkwake=no</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
