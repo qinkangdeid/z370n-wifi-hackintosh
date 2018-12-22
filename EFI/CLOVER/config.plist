@@ -161,13 +161,11 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>darkwake=no</string>
+		<string>dart=0 darkwake=0 nv_disable=1</string>
 		<key>Debug</key>
-		<false/>
-		<key>DefaultLoader</key>
-		<string>boot.efi</string>
+		<true/>
 		<key>DefaultVolume</key>
-		<string>2ADB417F78361A4F99CF3111C26C6D08</string>
+		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Secure</key>
@@ -196,8 +194,40 @@
 			<key>IntelGFX</key>
 			<string>0x3E918086</string>
 		</dict>
-		<key>LANInjection</key>
-		<false/>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				BwCbPg==
+				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+			</dict>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -323,7 +353,7 @@
 			<key>Mirror</key>
 			<false/>
 			<key>Speed</key>
-			<integer>1</integer>
+			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
 		<dict>
@@ -379,7 +409,7 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x01</string>
+		<string>0x67</string>
 		<key>MLB</key>
 		<string>C02032109R5DC771H</string>
 		<key>ROM</key>
