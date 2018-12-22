@@ -1,3 +1,10 @@
+## 2018-12-22
+
+- Colver升级到4813
+- AppleALC.kext更新到1.3.4
+- Lilu.kext更新到 1.2.9
+- WhateverGreen.kext更新到 1.2.5
+
 ## 2018-12-11
 
 - BIOS升级到F10
@@ -22,7 +29,6 @@
  - apfs.efi相应升级到10.13.6
 
  - 更新USB补丁
-
 
 ---
 
