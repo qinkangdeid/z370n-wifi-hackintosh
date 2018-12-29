@@ -3,6 +3,7 @@
 ## 2018-12-29
 
 - WhateverGreen.kext更新到 1.2.6
+- Lilu.kext更新到 1.3.0
 
 
 
