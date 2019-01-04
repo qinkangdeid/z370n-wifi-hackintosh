@@ -2,6 +2,21 @@
 
 # z370n-wifi-hackintosh
 
+
+## 目录一览
+
+```bash
+└── z370n-wifi-hackintosh    -----  总目录
+    ├── CHANGELOG.md    ---- 更新日志
+    ├── EFI       ---- MacOS引导文件 
+    ├── README.md   ---- README.md 
+    ├── bios     ---- 主板相关bios(包含原始BIOS和适用于MacOS下的BIOS设置文件) 
+    ├── cpu_unkown ---- MacOS下 CPU 未知修改文件
+    └── ssdt  ---- 主板所有USB端口配置(此配置文件已经包含在EFI中)
+```
+
+
+
 ## 配置
 
 | 硬件           | 型号                                            |
@@ -47,17 +62,6 @@
 
 > Chipset → DVMT Pre-Allocated :128M (if this setting isn’t showing then: 1. Set Integrated Graphics: Enabled. 
 
-## 目录一览
-
-```bash
-└── z370n-wifi-hackintosh    -----  总目录
-    ├── CHANGELOG.md    ---- 更新日志
-    ├── EFI       ---- MacOS引导文件 
-    ├── README.md   ---- README.md 
-    ├── bios     ---- 主板相关bios(包含原始BIOS和适用于MacOS下的BIOS设置文件) 
-    ├── cpu_unkown ---- MacOS下 CPU 未知修改文件
-    └── ssdt  ---- 主板所有USB端口配置(此配置文件已经包含在EFI中)
-```
 
 
 
