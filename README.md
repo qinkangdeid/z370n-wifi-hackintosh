@@ -56,7 +56,7 @@
     ├── README.md   ---- README.md 
     ├── bios     ---- 主板相关bios(包含原始BIOS和适用于MacOS下的BIOS设置文件) 
     ├── cpu_unkown ---- MacOS下 CPU 未知修改文件
-    └── ssdt  ---- USB端口配置(此配置文件已经包含在EFI中)
+    └── ssdt  ---- 主板所有USB端口配置(此配置文件已经包含在EFI中)
 ```
 
 
