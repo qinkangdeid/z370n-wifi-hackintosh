@@ -165,7 +165,7 @@
 		<key>Debug</key>
 		<true/>
 		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
+		<string>MacOS</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Secure</key>
