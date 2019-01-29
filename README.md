@@ -2,6 +2,8 @@
 
 # z370n-wifi-hackintosh
 
+
+
 ## 目录一览
 
 ```bash
@@ -16,8 +18,9 @@
 
 ## 分支介绍
 > 一般的 你只需要将EFI整个复制到你制作的启动U盘里的EFI分区即可,其他文件只是我的备份或从EFI复制出来备用的东西
-- 10.13.x  —> high-sierra
-- 10.14.x  —> mojave  
+> - 10.13.x  —> high-sierra
+> - 10.14.x  —> mojave  
+> - master  ---> 一般都是目前MacOS最新版本的配置 例如现在最新版本是mojave，master分支会和 mojave保持一致
 
 ## 配置
 
@@ -33,9 +36,11 @@
 
 ## BIOS 设置
 
-BIOS需要做以下修改
+BIOS需要做以下修改:
 
-**Save & Exit → Load Optimized Defaults**
+1. 先把之前的配置还原：**Save & Exit → Load Optimized Defaults**
+
+2. 之后进行下述配置:
 
 > M.I.T. → Advanced Memory Settings Extreme Memory Profile(X.M.P.) : Profile1
 
@@ -66,7 +71,9 @@ BIOS需要做以下修改
 
 > Chipset → DVMT Pre-Allocated :128M (if this setting isn’t showing then: 1. Set Integrated Graphics: Enabled. 
 
+## 更新日志
 
+[查看更新日志](CHANGELOG.md)
 
 ## 安装
 
