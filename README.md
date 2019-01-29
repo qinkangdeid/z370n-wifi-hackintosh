@@ -2,7 +2,6 @@
 
 # z370n-wifi-hackintosh
 
-
 ## 目录一览
 
 ```bash
@@ -25,14 +24,16 @@
 | 硬件           | 型号                                            |
 | -------------- | ----------------------------------------------- |
 | 主板           | 技嘉 z370n-wifi                                 |
-| CPU            | i5-8400 / i5-8500                               |
+| CPU            | i5-8400 / i5-8500 / i5-8600K                    |
 | CPU散热        | 猫头鹰NH-L9i                                    |
 | 机箱(带电源)   | 立人-H80                                        |
 | 蓝牙wifi(可选) | ~博通 BCM94352Z~ BCM94360CS2                    |
 | 内存           | 骇客神条16GB  / 芝奇灯条                        |
 | SSD            | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO |
 
-## BIOS Settings
+## BIOS 设置
+
+BIOS需要做以下修改
 
 **Save & Exit → Load Optimized Defaults**
 
@@ -67,7 +68,8 @@
 
 
 
+## 安装
 
-[安装方法](install.md)
+[查看安装方法](install.md)
 
 
