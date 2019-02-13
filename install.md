@@ -14,9 +14,13 @@
 
 ## 配置EFI 启动配置
 
-你现在想在不是苹果官方产生的电脑上运行MacOS，那就需要让 MacOS “认为”你现有的硬件是“合格”运行MacOS的硬件。系统启动都有一个引导自检的过程，像Android的bootloader一样，PC也有，以前有BIOS启动，现在是UEFI启动(Unified Extensible Firmware Interface),是一种详细描述类型接口的标准。这种接口用于操作系统自动从预启动的操作环境，加载到一种操作系统上，黑苹果就是在这个阶段去做一些手脚了。
+​        想要在不是苹果官方产生的电脑上运行MacOS，那就需要让 MacOS “认为”你现有的硬件是“合格”运行MacOS的硬件。
+
+​        系统启动都有一个引导自检的过程，像Android的bootloader一样，PC也有，以前有BIOS启动，现在是UEFI启动(Unified Extensible Firmware Interface),是一种详细描述类型接口的标准。这种接口用于操作系统自动从预启动的操作环境，加载到一种操作系统上。
+
+​        黑苹果就是在这个阶段去做一些“手脚”了。黑苹果最重要的就是整理配置这里的EFI引导文件，如果你的主板用的和我的一样，那么你可以直接使用我的EFI文件即可。
 
 # 安装
 
-[U盘启动器制造](usb-installer.md)
+​        和Windows、Linux系统的安装步骤一样，你需要制造一个U盘启动器，[查看这里制作你的U盘启动器](usb-installer.md)。
 
