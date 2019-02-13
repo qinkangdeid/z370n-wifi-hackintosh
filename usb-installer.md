@@ -89,6 +89,30 @@ Install media now available at "/Volumes/Install macOS Mojave"
 
 烧录软件我使用[etcher](https://www.balena.io/etcher/) 
 
+基本只需要点三次就可以完成：
+
+- 选取烧录镜像
+
+![image-20190213181324610](https://ws1.sinaimg.cn/large/006tNc79gy1g04yn3c5yqj318c0qkq4n.jpg)
+
+- 选择要烧录的U盘
+
+![image-20190213181611080](https://ws2.sinaimg.cn/large/006tNc79gy1g04ypzgsv4j31ef0u0agh.jpg)
+
+- 点击烧录
+
+![image-20190213181642150](https://ws3.sinaimg.cn/large/006tNc79gy1g04yqimuunj31e60u07b8.jpg)
+
+之后看到烧录进度条
+
+![image-20190213181705549](https://ws3.sinaimg.cn/large/006tNc79gy1g04yqxb5m7j31e60u0kjj.jpg)
+
+烧录成功，就是这么简单！
+
+![image-20190213181721413](https://ws4.sinaimg.cn/large/006tNc79gy1g04yr7egmhj31ei0u0n7e.jpg)
+
+
+
 ## 复制EFI引导文件
 
 ​        使用你喜欢的任何可以挂在EFI分区的方式（ 不论系统），将EFI引导文件复制到U盘启动器的EFI分区内。
