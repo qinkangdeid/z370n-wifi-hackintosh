@@ -1,15 +1,14 @@
 [TOC]
 
-# 制作U盘启动
+# 制作黑苹果U盘启动器
 
-## 制作黑苹果U盘启动器
-
-### 前期准备：
+## 前期准备：
 
 - 8GB以上U盘(空盘、有数据的提前备份，制作时会格式化)
 - Mac镜像
 - 符合你PC配置的EFI引导文件
 
+## 制作启动盘
 
 ### 方式一
 
@@ -80,10 +79,10 @@ Install media now available at "/Volumes/Install macOS Mojave"
 
 烧录软件我使用[etcher](https://www.balena.io/etcher/) 
 
-
 ## 复制EFI引导文件
 
 ​        使用你喜欢的任何可以挂在EFI分区的方式（ 不论系统），将EFI引导文件复制到U盘启动器的EFI分区内。
+
 ### 方式一
 
 如果是在Mac环境下，我使用`Clover Configurator`软件挂，毕竟以后黑苹果要改配置都用得上它。切到`Mount EFI`标签，找到你的U盘名字，点击`Mount Partition`输入密码挂载
@@ -95,7 +94,7 @@ Install media now available at "/Volumes/Install macOS Mojave"
 复制你准备好的EFI文件进入即可，注意一定要带EFI文件夹名称
 
 ![image-20190213154158135](https://ws3.sinaimg.cn/large/006tNc79gy1g04u9iiofxj316s0o8thz.jpg)
- 
+
 ### 方式二
 
 使用WindowsPE复制你的EFI文件
