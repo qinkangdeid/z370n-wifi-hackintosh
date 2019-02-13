@@ -24,7 +24,13 @@
 
 ![image-20190213142944047](https://ws3.sinaimg.cn/large/006tNc79gy1g04s6eppj9j31180esn20.jpg)
 
-镜像很大，下载需要时间，下载完成后会在`启动台`里看到镜像![image-20190213143109210](https://ws4.sinaimg.cn/large/006tNc79gy1g04s7w0onfj30dc05qmym.jpg)
+镜像很大，下载需要时间，下载完成后会在`启动台`里看到镜像
+
+
+
+![image-20190213143109210](https://ws4.sinaimg.cn/large/006tNc79gy1g04s7w0onfj30dc05qmym.jpg)
+
+
 
 - 格式化U盘
 
@@ -74,7 +80,7 @@ Install media now available at "/Volumes/Install macOS Mojave"
 
 — 下载网上资源镜像制作
 
-如果你没有Mac环境，没办法从appStore下载镜像的话或者你怕自己命令行制作有问题的话，也可以从网上资源查找镜像下载制作，这此步骤适用于Windows、Mac环境。
+​	如果你没有Mac环境，没办法从appStore下载镜像的话或者你怕自己命令行制作有问题的话，也可以从网上资源查找镜像下载制作，这此步骤适用于Windows、Mac环境。
 你可以到[黑苹果乐园](https://imac.hk/category/macos/)下载镜像，下载下来的是一个`dmg`结尾的文件,使用烧录软件烧录即可。
 
 烧录软件我使用[etcher](https://www.balena.io/etcher/) 
@@ -97,8 +103,18 @@ Install media now available at "/Volumes/Install macOS Mojave"
 
 ### 方式二
 
-使用WindowsPE复制你的EFI文件
+​	使用WindowsPE复制你的EFI文件，启动到PE，挂载你的EFI盘符，使用Windows熟悉的方式复制EFI文件。
 
 
-到这里整个安装介质已经准备完毕了，下面就是把系统安装到你PC硬盘上了。一定要确保你找或你配置的EFI外文件是合适你现有硬件的，不然你就算制作成功了U盘启动，到了安装步骤可能连安装向导也出不来。
+
+
+
+
+
+
+
+
+
+
+​	到这里整个安装介质已经准备完毕了，下面就是把系统安装到你PC硬盘上了。一定要确保你找或你配置的EFI外文件是合适你现有硬件的，不然你就算制作成功了U盘启动，到了安装步骤可能连安装向导也出不来。
 
