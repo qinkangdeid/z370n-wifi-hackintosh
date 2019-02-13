@@ -35,7 +35,11 @@
 - 格式化U盘
 
    将U盘插入USB上，格式化U盘。
-   打开 `应用程序 → 实用工具 → 磁盘工具`，将U盘「抹掉」(格式化) 成「Mac OS X 扩展（日志式）」格式、GUID 分区图，并将 U 盘命名为「Mojave」注意：这里的盘符名称你可以随意指定，但是下一步制作U盘启动的时候选择的U盘名称要和这里设置的一样。![image-20190213144135166](https://ws4.sinaimg.cn/large/006tNc79gy1g04skuu6pmj30au07qdja.jpg)
+   打开 `应用程序 → 实用工具 → 磁盘工具`，将U盘「抹掉」(格式化) 成「Mac OS X 扩展（日志式）」格式、GUID 分区图，并将 U 盘命名为「Mojave」注意：这里的盘符名称你可以随意指定，但是下一步制作U盘启动的时候选择的U盘名称要和这里设置的一样。
+
+   
+
+   ![image-20190213144135166](https://ws4.sinaimg.cn/large/006tNc79gy1g04skuu6pmj30au07qdja.jpg)
 
 ![image-20190213144347164](https://ws1.sinaimg.cn/large/006tNc79gy1g04slr6khdj31fe0i4nja.jpg)
 
