@@ -2,6 +2,13 @@
 
 # z370n-wifi-hackintosh
 
+## 更新日志
+
+[查看更新日志](CHANGELOG.md)
+
+## 安装
+
+[查看安装方法](install.md)
 
 
 ## 目录一览
@@ -71,12 +78,6 @@ BIOS需要做以下修改:
 
 > Chipset → DVMT Pre-Allocated :128M (if this setting isn’t showing then: 1. Set Integrated Graphics: Enabled. 
 
-## 更新日志
 
-[查看更新日志](CHANGELOG.md)
-
-## 安装
-
-[查看安装方法](install.md)
 
 

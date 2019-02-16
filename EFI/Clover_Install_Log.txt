@@ -1,34 +1,27 @@
 
-Clover EFI installer log - Thu Jan 31 18:36:38 CST 2019
-Installer version: v2.4k r4862 EFI bootloader
+Clover EFI installer log - Sat Feb 16 23:02:57 CST 2019
+Installer version: v2.4k r4871 EFI bootloader
 ======================================================
 /dev/disk0 (internal):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                         512.1 GB   disk0
-   1:                        EFI EFI                     209.7 MB   disk0s1
+   1:                        EFI                         238.0 MB   disk0s1
    2:                 Apple_APFS Container disk1         511.9 GB   disk0s2
 
 /dev/disk1 (synthesized):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      APFS Container Scheme -                      +511.9 GB   disk1
                                  Physical Store disk0s2
-   1:                APFS Volume MacOS                   32.9 GB    disk1s1
-   2:                APFS Volume Preboot                 45.5 MB    disk1s2
-   3:                APFS Volume Recovery                516.9 MB   disk1s3
+   1:                APFS Volume MacOS                   27.9 GB    disk1s1
+   2:                APFS Volume Preboot                 45.6 MB    disk1s2
+   3:                APFS Volume Recovery                517.0 MB   disk1s3
    4:                APFS Volume VM                      2.1 GB     disk1s4
-   5:                APFS Volume data                    9.1 GB     disk1s5
-
-/dev/disk2 (external, physical):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *62.7 GB    disk2
-   1:                        EFI EFI                     209.7 MB   disk2s1
-   2:       Microsoft Basic Data U64                     62.5 GB    disk2s2
 
 Target volume /Volumes/MacOS on disk1 is APFS on physical store disk0s2
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/MacOS/EFIROOTDIR/EFI folder to /Volumes/MacOS/EFI-Backups/r4862/2019-01-31-18h36/EFI
+Backing up /Volumes/MacOS/EFIROOTDIR/EFI folder to /Volumes/MacOS/EFI-Backups/r4862/2019-02-16-23h02/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
