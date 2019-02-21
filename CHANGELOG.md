@@ -1,5 +1,10 @@
 [TOC]
 
+--- 
+## 2019-02-21
+
+- Lilu | Version: 1.3.4
+- AppleALC | Version: 1.3.5
 
 
 --- 
