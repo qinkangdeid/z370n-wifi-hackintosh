@@ -58,11 +58,11 @@
 
 ![image-20190228214437758](https://ws4.sinaimg.cn/large/006tKfTcgy1g0mh1hihkaj31400u0npd.jpg)
 
-之后会来到`macOS实用工具`界面，我们需要将系统盘进行抹掉操作，所以选要选择`磁盘工具`，进行抹盘，就是要格式化的意思，所以如果你将要安装的系统盘如果之前要什么重要的数据，那么事先就要先做好备份了。
+之后会来到`macOS实用工具`界面，我们需要将系统盘进行`抹掉`操作，所以要选择`磁盘工具`，进行抹盘，就是要格式化的意思，所以如果你将要安装的系统盘之前有什么重要的数据，那么事先就要先做好备份了。
 
 ![image-20190228214625338](https://ws3.sinaimg.cn/large/006tKfTcgy1g0mh3dg6xqj31400u0e81.jpg)
 
-之后进项抹盘操作，选择系统盘，然后点击抹掉
+之后进项抹盘操作，选择系统盘，然后点击`抹掉`
 
 ![image-20190228214821413](https://ws4.sinaimg.cn/large/006tKfTcgy1g0mh5dkgkqj31ba0u01ky.jpg)
 
@@ -108,7 +108,7 @@
 
 ![image-20190228220924568](https://ws4.sinaimg.cn/large/006tKfTcgy1g0mhr9t2o3j31400u07s6.jpg)
 
-这个步骤可能还是会有重启，所以和之前上面的操作一样，手动选择U盘启动器，clover引导界面选择启动到底我们的系统盘，大概十几分钟后安装完毕会提示下面即将要重启的提示，记住，只要重启，你就要手动选择U盘启动，现在的引导文件只在我们的U盘启动器里面，还没有在我们的系统盘里面，所以要引导系统，就需要选择U盘引导启动。
+这个步骤可能还是会有重启，所以和之前上面的操作一样，手动选择U盘启动器，clover引导界面选择启动到我们的系统盘，大概十几分钟后安装完毕会提示下面即将要重启的提示，记住，只要重启，你就要手动选择U盘启动，现在的引导文件只在我们的U盘启动器里面，还没有在我们的系统盘里面，所以要引导系统，就需要选择U盘引导启动。
 
 ![image-20190228221034996](https://ws1.sinaimg.cn/large/006tKfTcgy1g0mhshw8ixj31400u01kx.jpg)
 
@@ -144,11 +144,11 @@
 
 ![image-20190228222347816](https://ws1.sinaimg.cn/large/006tKfTcgy1g0mi691u2ij31400u0x0h.jpg)
 
-之后来到创建用户阶段，其他的都好说，``Hint`的输入框是当你锁屏输入密码错误的时候会给与的提示字符，按你喜欢的设置就可以了，设置完后继续点击`Continue`
+之后来到创建用户阶段，其他的都好说，`Hint`的输入框是当你锁屏输入密码错误的时候会给与的提示字符，按你喜欢的设置就可以了，设置完后继续点击`Continue`
 
 ![image-20190228222514317](https://ws3.sinaimg.cn/large/006tKfTcgy1g0mi7qn4qwj31400u07wh.jpg)
 
-来到系统特性说明啦，出现这个那么感觉是不是快可以结束了，应该是的，依然`Continue`，安装系统就是百般顺从的过程
+来到系统特性说明啦，出现这个那么感觉是不是快可以结束了?，应该是的，依然`Continue`，安装系统就是百般顺从的过程
 
 ![image-20190228222832928](https://ws2.sinaimg.cn/large/006tKfTcgy1g0mib6rwp9j31400u0qo6.jpg)
 
@@ -162,27 +162,29 @@
 
 终于~ 终于等到你~进入桌面了，这个时候首先跳出来的就是来识别一下你的键盘键位Mac到底识别的对不对，跟着它的提示，找你的`shift`按钮按下去吧。
 
-![âmojaveâçå¾çæç´¢ç"æ](https://ws4.sinaimg.cn/large/006tKfTcgy1g0mij1xnzpj31400u0kex.jpg)
+![image-20190228232111734](https://ws2.sinaimg.cn/large/006tKfTcgy1g0mjtyo88bj31400u0npd.jpg)
 
-祝贺你，神功已练成了~
+桌面呈现在你的眼前 **祝贺你，神功已练成了**~（这张图是我网上随便找的，我的桌面太乱就不截图了:joy:）
+
+![âmojaveâçå¾çæç´¢ç"æ](https://ws4.sinaimg.cn/large/006tKfTcgy1g0mij1xnzpj31400u0kex.jpg)
 
 ### 复制EFI引导到系统盘
 
-神功虽练成，但是你还是需要使用外部的U盘来进行引导系统的启动，所以下面，你需要将引导文件装载到你系统盘的EFI分区，你已经拥有MacOS环境了，那么就使用`Clover Configurator`软件挂载吧，这个步骤和制作U盘启动器时候把EFI文件复制进U盘里的步骤是一样样的，只不过这一次你是要把EFI文件复制到你已经安装好的系统盘的EFI分区里而已。为了你要回去看步骤，我还是复制以前的放这里吧，连贯一些
+神功虽练成，但是你还是需要使用外部的U盘来进行引导系统的启动，所以下面，你需要将引导文件装载到你系统盘的EFI分区，到了这一步我已经明确知道你已经拥有MacOS环境了，那么就使用`Clover Configurator`软件挂载吧，这个步骤和制作U盘启动器时候把EFI文件复制进U盘里的步骤是一样样的，只不过这一次你是要把EFI文件复制到你已经安装好的系统盘的EFI分区里而已。为了你不用回去看步骤，我还是复制以前的放这里吧，连贯一些
 
 软件下载可以去这里[下载](https://mackie100projects.altervista.org/download-clover-configurator/),不是 **Mac App Store**下载的软件，MacOS会启用了新的安全机制检查不让运行，命令行执行`sudo spctl --master-disable`命令即可运行。
 
-打开了`Clover Configurator`软件后，切到`Mount EFI`标签，这里会显示两个EFI分区，分别给两个分区都挂载到底系统上，点击`Mount Partition`输入用户密码挂载EFI分区。
+打开了`Clover Configurator`软件后，切到`Mount EFI`标签，这里会显示两个EFI分区，分别给两个分区都挂载到系统上，点击`Mount Partition`输入用户密码挂载EFI分区。
 
 ![image-20190228224240124](https://ws3.sinaimg.cn/large/006tKfTcgy1g0mipvuhk4j31hx0u01ae.jpg)
 
-这个时候分别打开系统盘的EFI和U盘的EFI分区，将U盘EFI分区里的`EFI文件夹`整个复制到系统盘的EFI分区里就搞定了！这回神功就附体了。
+这个时候分别打开系统盘的EFI和U盘的EFI分区，将U盘EFI分区里的`EFI文件夹`整个复制到系统盘的EFI分区里就搞定了！这回神功就附体了！
 
 **PS**: 如果你现在选择不复制EFI文件也是可以的，在PE这里也是可以复制EFI文件的，方法也就是挂载两个EFI分区，复制文件就行了
 
 
 
-> 不过如果你的硬盘不被你的主板认为第一启动盘的时候，你需要将你的系统盘设置为第一启动盘，这里我们可以使用PE系统，将clover引导作为第一启动项
+> 不过如果你的硬盘不被你的主板认为第一启动盘的时候，你需要将你的系统盘设置为第一启动盘，这里我们可以使用PE系统，将clover引导作为第一启动项，如果你不知道你的主板是不是已经将你的系统盘作为第一启动盘了，那么就跟着照做吧
 
 启动到你的PE系统里(如何U盘启动前面已经说了)，运行`DiskGenius`，去看你的系统盘的EFI分区在PE里的盘符是多少，可以看到我的系统盘的EFI分区盘符是`D`
 
@@ -192,7 +194,7 @@
 
 ![image-20190228225751309](https://ws4.sinaimg.cn/large/006tKfTcgy1g0mj5oo8w0j31qk0u0x6p.jpg)
 
-打开盘符D,可以看到我们的EFI文件夹。这里开始使用PE上的一个引导工具将Clover引导作为第一启动项，`BOOTICE`软件因为没有哪个PE没有自带吧？
+打开盘符D,可以看到我们的EFI文件夹。这里开始使用PE上的一个引导工具将Clover引导作为第一启动项，`BOOTICE`软件没有哪个PE没有自带吧？
 
 ![image-20190228225853405](https://ws3.sinaimg.cn/large/006tKfTcgy1g0mj6rci1cj30u00woe82.jpg)
 
@@ -204,7 +206,7 @@
 
 ![image-20190228230143109](https://ws1.sinaimg.cn/large/006tKfTcgy1g0mj9p791ej31400u0u0x.jpg)
 
-之后再软件界面最下面会看到一条新建的引导项
+之后在软件界面最下面会看到一条新建的引导项
 
 ![image-20190228230214754](https://ws1.sinaimg.cn/large/006tKfTcgy1g0mja8puuqj31400u01kx.jpg)
 
