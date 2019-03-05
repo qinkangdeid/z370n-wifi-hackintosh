@@ -23,8 +23,8 @@
     └── ssdt  ---- 主板所有USB端口配置(此配置文件已经包含在EFI中)
 ```
 
-## 分支介绍
-> 一般的 你只需要将EFI整个复制到你制作的启动U盘里的EFI分区即可,其他文件只是我的备份或从EFI复制出来备用的东西
+## 分支使用介绍
+> 一般的 你只需要将EFI整个复制到你制作的启动U盘里的EFI分区即可,其他文件只是我的备份
 > - 10.13.x  —> high-sierra
 > - 10.14.x  —> mojave  
 > - master  ---> 一般都是目前MacOS最新版本的配置 例如现在最新版本是mojave，master分支会和 mojave保持一致
@@ -35,10 +35,10 @@
 | -------------- | ----------------------------------------------- |
 | 主板           | 技嘉 z370n-wifi                                 |
 | CPU            | i5-8400 / i5-8500 / i5-8600K                    |
-| CPU散热        | 猫头鹰NH-L9i                                    |
+| CPU散热        | 猫头鹰 NH-L9i                                    |
 | 机箱(带电源)   | 立人-H80                                        |
-| 蓝牙wifi(可选) | ~博通 BCM94352Z~ BCM94360CS2                    |
-| 内存           | 骇客神条16GB  / 芝奇灯条                        |
+| 蓝牙wifi(可选) |  BCM94352Z(DW1560) / BCM94360CS2                    |
+| 内存           | 骇客神条16GB  / 芝奇幻光戟 32G                        |
 | SSD            | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO |
 
 ## BIOS 设置
@@ -78,6 +78,25 @@ BIOS需要做以下修改:
 
 > Chipset → DVMT Pre-Allocated :128M (if this setting isn’t showing then: 1. Set Integrated Graphics: Enabled. 
 
+
+## 网卡
+
+
+
+
+
+
+
+## 蓝牙/WIFI
+
+默认的主板上的蓝牙/WIFI网卡不能用于黑苹果。你需要更换为兼容的网卡，有两块网卡能够兼容黑苹果：
+
+- 原装网卡BCM94360CS2 
+
+> 此款网卡原生驱动 不需要添加第三方驱动
+
+- Dell的DW1560(具体型号为BCM94352Z) 
+> 这块网卡需要添加相应驱动，参考黑锅小兵版主的[教程](https://blog.daliansky.net/Broadcom-BCM94352z-DW1560-drive-new-posture.html)设置
 
 
 
