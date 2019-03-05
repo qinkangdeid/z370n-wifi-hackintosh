@@ -81,10 +81,8 @@ BIOS需要做以下修改:
 
 ## 网卡
 
-
-
-
-
+- 左侧网口使用 `IntelMausiEthernet.kext`.
+- 右侧网口 `SmallTree-Intel-211-AT-PCIe-GBE.kext`
 
 
 ## 蓝牙/WIFI
@@ -96,7 +94,14 @@ BIOS需要做以下修改:
 > 此款网卡原生驱动 不需要添加第三方驱动
 
 - Dell的DW1560(具体型号为BCM94352Z) 
-> 这块网卡需要添加相应驱动，参考黑锅小兵版主的[教程](https://blog.daliansky.net/Broadcom-BCM94352z-DW1560-drive-new-posture.html)设置
+> 这块网卡需要添加相应驱动，参考黑果小兵版主的[教程](https://blog.daliansky.net/Broadcom-BCM94352z-DW1560-drive-new-posture.html)设置
 
 
+## 后续问题解决途径
+
+- [Google is your good friend](https://www.google.com)
+- [黑果小兵博客](https://blog.daliansky.net)
+- [远景论坛](http://pcbeta.com)
+- [insanelymac](https://www.insanelymac.com)
+- [tonymacx86](https://www.tonymacx86.com)
 
