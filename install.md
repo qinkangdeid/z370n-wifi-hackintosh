@@ -1,4 +1,12 @@
-[TOC]
+<!-- TOC -->
+
+- [Hackintosh安装](#hackintosh安装)
+    - [EFI 配置](#efi-配置)
+    - [安装](#安装)
+        - [安装MacOS系统](#安装macos系统)
+        - [复制EFI引导到系统盘](#复制efi引导到系统盘)
+
+<!-- /TOC -->
 
 # Hackintosh安装
 
