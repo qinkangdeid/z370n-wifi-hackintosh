@@ -57,38 +57,39 @@
 
 BIOS需要做以下修改:
 
-1. 先把之前的配置还原：**Save & Exit → Load Optimized Defaults**
+- 先把之前的配置还原：
+    Save & Exit → Load Optimized Defaults
 
-2. 之后进行下述配置:
+- 之后进行下述配置:
 
-> M.I.T. → Advanced Memory Settings Extreme Memory Profile(X.M.P.) : Profile1
+    - M.I.T. → Advanced Memory Settings Extreme Memory Profile(X.M.P.) : Profile1
 
-> BIOS → Fast Boot : Disabled
+    - BIOS → Fast Boot : Disabled
 
-> BIOS → LAN PXE Boot Option ROM : Disabled
+    - BIOS → LAN PXE Boot Option ROM : Disabled
 
-> BIOS → Storage Boot Option Control : UEFI
+    - BIOS → Storage Boot Option Control : UEFI
 
-> Peripherals → Trusted Computing → Security Device Support : Disable
+    - Peripherals → Trusted Computing → Security Device Support : Disable
 
-> Peripherals → Network Stack Configuration → Network Stack : Disabled
+    - Peripherals → Network Stack Configuration → Network Stack : Disabled
 
-> Peripherals → USB Configuration → Legacy USB Support : Auto
+    - Peripherals → USB Configuration → Legacy USB Support : Auto
 
-> Peripherals → USB Configuration → XHCI Hand-off : Enabled
+    - Peripherals → USB Configuration → XHCI Hand-off : Enabled
 
-> Chipset → Vt-d : Disabled
+    - Chipset → Vt-d : Disabled
 
-> Chipset → Wake on LAN Enable : Disabled
+    - Chipset → Wake on LAN Enable : Disabled
 
-> Chipset → IOAPIC 24-119 Entries : Enabled
+    - Chipset → IOAPIC 24-119 Entries : Enabled
 
- **Intel iGPU:**
-> Peripherals → Initial Display Output : IGFX
+    - Intel iGPU:
+        - Peripherals → Initial Display Output : IGFX
 
-> Chipset → Integrated Graphics : Enabled
+    - Chipset → Integrated Graphics : Enabled
 
-> Chipset → DVMT Pre-Allocated :128M (if this setting isn’t showing then: 1. Set Integrated Graphics: Enabled. 
+    - Chipset → DVMT Pre-Allocated :128M (if this setting isn’t showing then: 1. Set Integrated Graphics: Enabled). 
 
 
 
