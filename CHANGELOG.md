@@ -1,6 +1,14 @@
 [TOC]
 
 --- 
+## 2019-03-22
+
+- AppleALC | Version: 1.3.6
+- Lilu | Version: 1.3.5
+- WhateverGreen | Version: 1.2.7
+
+
+--- 
 ## 2019-03-05
 
 - Clover Version update to: 4895
