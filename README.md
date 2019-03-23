@@ -58,7 +58,7 @@
 BIOS需要做以下修改:
 
 - 先把之前的配置还原：
-    Save & Exit → Load Optimized Defaults
+    - Save & Exit → Load Optimized Defaults
 
 - 之后进行下述配置:
 
