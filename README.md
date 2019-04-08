@@ -117,8 +117,10 @@ BIOS需要做以下修改:
 
 ## 网卡
 
-- 左侧网口使用 `IntelMausiEthernet.kext`.
-- 右侧网口 `SmallTree-Intel-211-AT-PCIe-GBE.kext`
+- 左侧网口 
+    > `IntelMausiEthernet.kext`.
+- 右侧网口 
+    > `SmallTree-Intel-211-AT-PCIe-GBE.kext`
 
 
 ## 蓝牙/WIFI
