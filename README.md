@@ -106,7 +106,13 @@ BIOS需要做以下修改:
 
 
 ## 如何更新
-> 更新你只需要下载好更新补丁或固件 然后复制最新的EFI文件到EFI分区即可
+> 更新你只需要下载好更新补丁或固件 然后复制最新的EFI文件到EFI分区即可,记得先替换EFI文件
+
+- 检测更新
+
+  ![image-20190408184641508](https://ws1.sinaimg.cn/large/006tNc79gy1g1vf2epczdj30xj0u0qbg.jpg)
+
+  ![image-20190408184713467](https://ws3.sinaimg.cn/large/006tNc79gy1g1vf2wv9svj31120f2dll.jpg)
 
 
 ## 网卡

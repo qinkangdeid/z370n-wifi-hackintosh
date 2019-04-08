@@ -161,11 +161,11 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 darkwake=no</string>
+		<string>dart=0 nv_disable=1 darkwake=0</string>
 		<key>Debug</key>
 		<true/>
 		<key>DefaultVolume</key>
-		<string>MacOS</string>
+		<string>macOS</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Secure</key>
