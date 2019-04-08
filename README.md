@@ -1,32 +1,38 @@
 [TOC]
 
+<!-- TOC -->
 
+- [z370n-wifi-hackintosh](#z370n-wifi-hackintosh)
+    - [硬件配置](#硬件配置)
+    - [目录一览](#目录一览)
+    - [分支使用介绍](#分支使用介绍)
+    - [BIOS 设置](#bios-设置)
+    - [更新日志](#更新日志)
+    - [安装](#安装)
+    - [如何更新](#如何更新)
+    - [网卡](#网卡)
+    - [蓝牙/WIFI](#蓝牙wifi)
+    - [后续问题解决途径](#后续问题解决途径)
 
-Table of Contents
-=================
-
-* [z370n\-wifi\-hackintosh](#z370n-wifi-hackintosh)
-  * [更新日志](#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97)
-  * [安装](#%E5%AE%89%E8%A3%85)
-  * [目录一览](#%E7%9B%AE%E5%BD%95%E4%B8%80%E8%A7%88)
-  * [分支使用介绍](#%E5%88%86%E6%94%AF%E4%BD%BF%E7%94%A8%E4%BB%8B%E7%BB%8D)
-  * [配置](#%E9%85%8D%E7%BD%AE)
-  * [BIOS 设置](#bios-%E8%AE%BE%E7%BD%AE)
-  * [网卡](#%E7%BD%91%E5%8D%A1)
-  * [蓝牙/WIFI](#%E8%93%9D%E7%89%99wifi)
-  * [后续问题解决途径](#%E5%90%8E%E7%BB%AD%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E9%80%94%E5%BE%84)
-  
-  
+<!-- /TOC -->
 
 # z370n-wifi-hackintosh
 
-## 更新日志
 
-[查看更新日志](CHANGELOG.md)
+## 硬件配置
 
-## 安装
+| 硬件           | 型号                                            |
+| -------------- | ----------------------------------------------- |
+| 主板           | 技嘉 z370n-wifi                                 |
+| CPU            | i5-8400 / i5-8500 / i5-8600K  /  i7-8700k                  |
+| CPU散热        | 猫头鹰 NH-L9i                                    |
+| 机箱(带电源)   | 立人-H80                                        |
+| 蓝牙wifi(可选) |  BCM94352Z(DW1560) / BCM94360CS2                    |
+| 内存           | 骇客神条16GB  / 芝奇幻光戟 32G                        |
+| SSD            | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO |
+|显卡| rx570蓝宝石|
 
-[查看安装方法](install.md)
+
 
 
 ## 目录一览
@@ -47,54 +53,60 @@ Table of Contents
 > - 10.14.x  —> mojave  
 > - master  ---> 一般都是目前MacOS最新版本的配置 例如现在最新版本是mojave，master分支会和 mojave保持一致
 
-## 配置
-
-| 硬件           | 型号                                            |
-| -------------- | ----------------------------------------------- |
-| 主板           | 技嘉 z370n-wifi                                 |
-| CPU            | i5-8400 / i5-8500 / i5-8600K                    |
-| CPU散热        | 猫头鹰 NH-L9i                                    |
-| 机箱(带电源)   | 立人-H80                                        |
-| 蓝牙wifi(可选) |  BCM94352Z(DW1560) / BCM94360CS2                    |
-| 内存           | 骇客神条16GB  / 芝奇幻光戟 32G                        |
-| SSD            | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO |
 
 ## BIOS 设置
 
 BIOS需要做以下修改:
 
-1. 先把之前的配置还原：**Save & Exit → Load Optimized Defaults**
+- 先把之前的配置还原：
 
-2. 之后进行下述配置:
+    - Save & Exit → Load Optimized Defaults
 
-> M.I.T. → Advanced Memory Settings Extreme Memory Profile(X.M.P.) : Profile1
+- 之后进行下述配置:
 
-> BIOS → Fast Boot : Disabled
+    - M.I.T. → Advanced Memory Settings Extreme Memory Profile(X.M.P.) : Profile1
 
-> BIOS → LAN PXE Boot Option ROM : Disabled
+    - BIOS → Fast Boot : Disabled
 
-> BIOS → Storage Boot Option Control : UEFI
+    - BIOS → LAN PXE Boot Option ROM : Disabled
 
-> Peripherals → Trusted Computing → Security Device Support : Disable
+    - BIOS → Storage Boot Option Control : UEFI
 
-> Peripherals → Network Stack Configuration → Network Stack : Disabled
+    - Peripherals → Trusted Computing → Security Device Support : Disable
 
-> Peripherals → USB Configuration → Legacy USB Support : Auto
+    - Peripherals → Network Stack Configuration → Network Stack : Disabled
 
-> Peripherals → USB Configuration → XHCI Hand-off : Enabled
+    - Peripherals → USB Configuration → Legacy USB Support : Auto
 
-> Chipset → Vt-d : Disabled
+    - Peripherals → USB Configuration → XHCI Hand-off : Enabled
 
-> Chipset → Wake on LAN Enable : Disabled
+    - Chipset → Vt-d : Disabled
 
-> Chipset → IOAPIC 24-119 Entries : Enabled
+    - Chipset → Wake on LAN Enable : Disabled
 
- **Intel iGPU:**
-> Peripherals → Initial Display Output : IGFX
+    - Chipset → IOAPIC 24-119 Entries : Enabled
 
-> Chipset → Integrated Graphics : Enabled
+    - Intel iGPU:
+        - Peripherals → Initial Display Output : IGFX
 
-> Chipset → DVMT Pre-Allocated :128M (if this setting isn’t showing then: 1. Set Integrated Graphics: Enabled. 
+    - Chipset → Integrated Graphics : Enabled
+
+    - Chipset → DVMT Pre-Allocated :128M (if this setting isn’t showing then: 1. Set Integrated Graphics: Enabled). 
+
+
+
+## 更新日志
+
+[查看更新日志](CHANGELOG.md)
+
+
+## 安装
+
+[查看安装方法](install.md)
+
+
+## 如何更新
+> 更新你只需要下载好更新补丁或固件 然后复制最新的EFI文件到EFI分区即可
 
 
 ## 网卡
