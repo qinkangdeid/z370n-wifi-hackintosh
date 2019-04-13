@@ -1,5 +1,6 @@
 [TOC]
 
+# z370n-wifi-hackintosh
 <!-- TOC -->
 
 - [z370n-wifi-hackintosh](#z370n-wifi-hackintosh)
@@ -12,14 +13,13 @@
     - [如何更新](#如何更新)
     - [网卡](#网卡)
     - [蓝牙/WIFI](#蓝牙wifi)
+    - [USB定制](#usb定制)
     - [后续问题解决途径](#后续问题解决途径)
 
 <!-- /TOC -->
-
-# z370n-wifi-hackintosh
-
-
 ## 硬件配置
+
+> 包含我所知的网友的配置
 
 | 硬件           | 型号                                            |
 | -------------- | ----------------------------------------------- |
@@ -28,23 +28,19 @@
 | CPU散热        | 猫头鹰 NH-L9i                                    |
 | 机箱(带电源)   | 立人-H80                                        |
 | 蓝牙wifi(可选) |  BCM94352Z(DW1560) / BCM94360CS2                    |
-| 内存           | 骇客神条16GB  / 芝奇幻光戟 32G                        |
+| 内存           | 骇客神条16GB  / 芝奇幻光戟 32G / 海盗船 32G              |
 | SSD            | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO |
-|显卡| rx570蓝宝石|
-
-
-
+|显卡| RX570蓝宝石 |
 
 ## 目录一览
 
 ```bash
-└── z370n-wifi-hackintosh    -----  总目录
-    ├── CHANGELOG.md    ---- 更新日志
-    ├── EFI       ---- MacOS引导文件 
+└── z370n-wifi-hackintosh
+    ├── EFI       ---- MacOS引导文件
+    ├── CHANGELOG.md    ---- 更新日志 
     ├── README.md   ---- README.md 
-    ├── bios     ---- 主板相关bios(包含原始BIOS和适用于MacOS下的BIOS设置文件) 
-    ├── cpu_unkown ---- MacOS下 CPU 未知修改文件
-    └── ssdt  ---- 主板所有USB端口配置(此配置文件已经包含在EFI中)
+    ├── BIOS     ---- 主板相关bios(包含原始BIOS和适用于MacOS下的BIOS设置文件) 
+    └── SSDT  ---- SSDT方式定制的USB patch文件
 ```
 
 ## 分支使用介绍
@@ -56,7 +52,9 @@
 
 ## BIOS 设置
 
-目前我的BIOS版本：F10 
+目前我的BIOS版本：`F10` 
+
+> 现在默认的BIOS也可以启动了，其实并非需要修改的那么细致，不过这是我最早期安装的时候的BIOS设置，所以一直沿用下来，如果你熟悉了可以按需设置，如果你不熟悉，那还是按照下面的来设置一下
 
 BIOS需要做以下修改:
 
@@ -95,8 +93,6 @@ BIOS需要做以下修改:
 
     - Chipset → DVMT Pre-Allocated :128M (if this setting isn’t showing then: 1. Set Integrated Graphics: Enabled). 
 
-
-
 ## 更新日志
 
 [查看更新日志](CHANGELOG.md)
@@ -122,10 +118,11 @@ BIOS需要做以下修改:
 ## 网卡
 
 - 左侧网口 
+
     > `IntelMausiEthernet.kext`.
 - 右侧网口 
-    > `SmallTree-Intel-211-AT-PCIe-GBE.kext`
 
+    > `SmallTree-Intel-211-AT-PCIe-GBE.kext`
 
 ## 蓝牙/WIFI
 
@@ -138,6 +135,25 @@ BIOS需要做以下修改:
 - Dell的DW1560(具体型号为BCM94352Z) 
 > 这块网卡需要添加相应驱动，参考黑果小兵版主的[教程](https://blog.daliansky.net/Broadcom-BCM94352z-DW1560-drive-new-posture.html)设置
 
+## USB定制
+
+USB有两种方法：
+- Hackintool定制
+
+  EFI里默认的使用方式是`Hackintool`软件制作`USBPorts.kext`
+
+  这种方式比较容易定制符合自己机箱的端口
+
+- SSDT定制
+
+  在SSDT文件夹里`SSDT-UIAC.aml`
+本质上两者应该没啥区别 只是定制的难易程度 我瞎猜的:smiley:  有大佬知道不要喷我
+
+**Z370N-WIFI USB端口位置**
+
+![image-20190413124841765](https://ws4.sinaimg.cn/large/006tNc79gy1g20wtg7bz9j30rs0go7dp.jpg)**以下是我目前定制的USB端口**，如果你要拓展你机箱上的USB口，具体修改方法参考[Hackintool(原Intel FB-Patcher)使用教程及插入姿势](<https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html>)，不过要确保在`15`个端口以内(含)，一个USB3.0就占用两个端口，用3.0的需求应该比2.0的多点吧，所以结合你自己的实际需要，你可以屏蔽USB3.0上的2.0端口以获取更多可用的USB3.0端口
+
+![image-20190413125013669](https://ws3.sinaimg.cn/large/006tNc79gy1g20wv06u38j30u00zlwlf.jpg)
 
 ## 后续问题解决途径
 

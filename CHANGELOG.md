@@ -1,8 +1,16 @@
 [TOC]
 
+## 2019-04-13
+  - 修改使用Hankintool定制USB端口
+
 ## 2019-04-08
   - macOS version update to: 10.14.4
   - Clover Version update to: r4910
+
+--- 
+## 2019-04-08
+- macOS version update to: 10.14.4
+- Clover Version update to: r4910
 
 --- 
 ## 2019-03-22
