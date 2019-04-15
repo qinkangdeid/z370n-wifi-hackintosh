@@ -138,7 +138,7 @@ USB有两种方法：
 
   这种方式比较容易定制符合自己机箱的端口
 
-- SSDT定制
+- [SSDT定制](https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/)
 
   在SSDT文件夹里`SSDT-UIAC.aml`
 本质上两者应该没啥区别 只是定制的难易程度 我瞎猜的:smiley:  有大佬知道不要喷我
