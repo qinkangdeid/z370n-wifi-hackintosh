@@ -64,34 +64,28 @@ BIOS需要做以下修改:
 
 - 之后进行下述配置:
 
-    - M.I.T. → Advanced Memory Settings Extreme Memory Profile(X.M.P.) : Profile1
+ -  M.I.T > Extreme Memory Profile (X.M.P.) > Profile 1
+ -  BIOS > Windows 8/10 Features > Windows 8/10 (cuz there is not the option of "Other OS")
+ -  BIOS > CSM Support > Disabled
+ -  BIOS > Secure Boot > Disabled
+ -  Peripherals > Intel Platform Trust Technology (PTT) > Disabled
+ -  Peripherals > USB Configuration > Legacy USB Support > Enabled
+ -  Peripherals > USB Configuration > XHCI Hand-off > Enabled
+ -  Peripherals > Network Stack Configuration > Network Stack > Disabled
+ -  Chipset > Vt-d > Disabled
+ -  Chipset > DVMT Pre-Alloc > 64M
+ -  Chipset > DVMT Total Gfx Mem > 256M
+ -  Chipset > Above 4G Decoding > Enabled
 
-    - BIOS → Fast Boot : Disabled
+- 核显    
+ -  Peripherals → Initial Display Output : IGFX
+ -  Chipset → Integrated Graphics : Enabled
+ -  Chipset → DVMT Pre-Allocated :128M 
 
-    - BIOS → LAN PXE Boot Option ROM : Disabled
+- 外置显卡
+ -  Peripherals → Initial Display Output : PCIe 1 Slot
+ -  Chipset → Integrated Graphics : Disabled
 
-    - BIOS → Storage Boot Option Control : UEFI
-
-    - Peripherals → Trusted Computing → Security Device Support : Disable
-
-    - Peripherals → Network Stack Configuration → Network Stack : Disabled
-
-    - Peripherals → USB Configuration → Legacy USB Support : Auto
-
-    - Peripherals → USB Configuration → XHCI Hand-off : Enabled
-
-    - Chipset → Vt-d : Disabled
-
-    - Chipset → Wake on LAN Enable : Disabled
-
-    - Chipset → IOAPIC 24-119 Entries : Enabled
-
-    - Intel iGPU:
-        - Peripherals → Initial Display Output : IGFX
-
-    - Chipset → Integrated Graphics : Enabled
-
-    - Chipset → DVMT Pre-Allocated :128M (if this setting isn’t showing then: 1. Set Integrated Graphics: Enabled). 
 
 ## 更新日志
 
