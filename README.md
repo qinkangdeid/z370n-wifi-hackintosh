@@ -4,8 +4,8 @@
 <!-- TOC -->
 
 - [z370n-wifi-hackintosh](#z370n-wifi-hackintosh)
-    - [硬件配置](#硬件配置)
     - [目录一览](#目录一览)
+    - [硬件配置](#硬件配置)
     - [分支使用介绍](#分支使用介绍)
     - [BIOS 设置](#bios-设置)
     - [更新日志](#更新日志)
@@ -17,6 +17,18 @@
     - [后续问题解决途径](#后续问题解决途径)
 
 <!-- /TOC -->
+
+## 目录一览
+
+```bash
+└── z370n-wifi-hackintosh
+    ├── EFI       ---- MacOS引导文件
+    ├── CHANGELOG.md    ---- 更新日志 
+    ├── README.md   ---- README.md 
+    ├── BIOS     ---- 主板相关bios(包含原始BIOS和适用于MacOS下的BIOS设置文件) 
+    └── SSDT  ---- SSDT方式定制的USB patch文件
+```
+
 ## 硬件配置
 
 > 包含我所知的网友的配置
@@ -32,16 +44,7 @@
 | SSD            | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO |
 |显卡| RX570蓝宝石 |
 
-## 目录一览
 
-```bash
-└── z370n-wifi-hackintosh
-    ├── EFI       ---- MacOS引导文件
-    ├── CHANGELOG.md    ---- 更新日志 
-    ├── README.md   ---- README.md 
-    ├── BIOS     ---- 主板相关bios(包含原始BIOS和适用于MacOS下的BIOS设置文件) 
-    └── SSDT  ---- SSDT方式定制的USB patch文件
-```
 
 ## 分支使用介绍
 > 一般的 你只需要将EFI整个复制到你制作的启动U盘里的EFI分区即可,其他文件只是我的备份
