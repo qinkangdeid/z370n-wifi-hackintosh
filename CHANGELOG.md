@@ -1,5 +1,9 @@
 [TOC]
 
+## 2019-04-15
+  - AppleALC | Version: 1.3.7
+  - WhateverGreen | Version: 1.2.8
+
 ## 2019-04-13
   - 修改使用Hankintool定制USB端口
 
