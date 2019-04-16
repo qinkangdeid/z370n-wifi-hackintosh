@@ -1,5 +1,8 @@
 [TOC]
 
+## 2019-04-16
+- Clover Version update to: 4920
+
 ## 2019-04-15
   - AppleALC | Version: 1.3.7
   - WhateverGreen | Version: 1.2.8
