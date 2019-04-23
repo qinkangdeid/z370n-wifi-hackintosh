@@ -5,12 +5,12 @@
 
 - [z370n-wifi-hackintosh](#z370n-wifi-hackintosh)
     - [目录一览](#目录一览)
+    - [分支介绍](#分支介绍)
     - [硬件配置](#硬件配置)
-    - [分支使用介绍](#分支使用介绍)
-    - [BIOS 设置](#bios-设置)
     - [更新日志](#更新日志)
     - [安装](#安装)
     - [如何更新](#如何更新)
+    - [BIOS设置](#bios设置)
     - [网卡](#网卡)
     - [蓝牙/WIFI](#蓝牙wifi)
     - [USB定制](#usb定制)
@@ -29,6 +29,13 @@
     └── SSDT  ---- SSDT方式定制的USB patch文件
 ```
 
+## 分支介绍
+> 一般的 你只需要将EFI整个复制到你制作的启动U盘里的EFI分区即可,其他文件只是我的备份
+> - 10.13.x  —> high-sierra
+> - 10.14.x  —> mojave  
+> - master  ---> 一般都是目前MacOS最新版本的配置 例如现在最新版本是mojave，master分支会和 mojave保持一致
+
+
 ## 硬件配置
 
 > 包含我所知的网友的配置
@@ -44,104 +51,17 @@
 | SSD            | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO |
 |显卡| RX570蓝宝石 |
 
-
-
-## 分支使用介绍
-> 一般的 你只需要将EFI整个复制到你制作的启动U盘里的EFI分区即可,其他文件只是我的备份
-> - 10.13.x  —> high-sierra
-> - 10.14.x  —> mojave  
-> - master  ---> 一般都是目前MacOS最新版本的配置 例如现在最新版本是mojave，master分支会和 mojave保持一致
-
-## BIOS 设置
-
-目前我的BIOS版本：`F10` 
-
-### 还原BIOS配置：
-
-> Save & Exit → Load Optimized Defaults
-
-### 方法一：BIOS手动配置
-
-#### 必做部分
-
-如果你卡在了进度条很久都不动，例如这样
-
-![image-20190423134931921](https://ws4.sinaimg.cn/large/006tNc79gy1g2cirtywepj31400u0qow.jpg)
-
-那么下面是必做操作
-
-> BIOS > CSM Support > Disabled
-
-![image-20190423134954975](https://ws3.sinaimg.cn/large/006tNc79gy1g2cis6s6roj31400u0nm5.jpg)
-
-#### 选做部分
-
-  (如果必做的操作可以让你顺利启动macOS那么就不用做以下操作，除非你清楚操作目的)
-
-##### 显卡部分
-
-根据你有无独立显卡设置
-
-
-
-  - 核显调整    
- - Peripherals → Initial Display Output : IGFX
- - Chipset → Integrated Graphics : Enabled
- - Chipset → DVMT Pre-Allocated :128M 
-
-
-
-- 外置显卡调整    
- - Peripherals → Initial Display Output : PCIe 1 Slot
- - Chipset → Integrated Graphics : Disabled
-
-##### 其他部分
-
- - BIOS > Windows 8/10 Features > Windows 8/10
-
- - BIOS > Secure Boot > Disabled
-
- - Peripherals > Intel Platform Trust Technology (PTT) > Disabled
-
- - Peripherals > USB Configuration > Legacy USB Support > Enabled
-
- - Peripherals > Network Stack Configuration > Network Stack > Disabled
-
- - Peripherals > USB Configuration > XHCI Hand-off > Enabled
-
-
-
- - Chipset > DVMT Pre-Alloc > 128M
- - Chipset > DVMT Total Gfx Mem > 256M
- - M.I.T > Extreme Memory Profile (X.M.P.) > Profile 1
- - Chipset > Vt-d > Disabled
- - Chipset > Above 4G Decoding > Enabled
-
-### 方法二：导入BIOS配置文件
-
-我提供了已经配置好的BISO设置文件，你可以选择导入我配置的BIOS文件
-
-> **PS**:  
-> - 一定要对应BIOS版本
-> - 我的版本只是用核显没有独立显卡
-
-1. 开机狂按`Del`进入BIOS界面
-2. 切换到`Save&Exit` 选择 `Load Profiles`，在弹出的对话框内选择对应的BIOS文件
-3. 出现`Profile Loaded`窗口后，点击`Save&Exit Setup`退出BIOS重启
-
-![image-20190423135030808](https://ws4.sinaimg.cn/large/006tNc79gy1g2cist7ruxj31400u0wyj.jpg)
-
-![image-20190423135038029](https://ws2.sinaimg.cn/large/006tNc79gy1g2cisxs8v3j31400u0k78.jpg)
-
 ## 更新日志
 
 [查看更新日志](CHANGELOG.md)
 
 
+
+
 ## 安装
 
-[查看安装方法](install.md)
-
+1. [安装前请先设置好BIOS](#BIOS设置)
+2. [查看安装方法](install.md)
 
 ## 如何更新
 
@@ -153,6 +73,92 @@
   ![image-20190408184641508](https://ws1.sinaimg.cn/large/006tNc79gy1g1vf2epczdj30xj0u0qbg.jpg)
 
   ![image-20190408184713467](https://ws3.sinaimg.cn/large/006tNc79gy1g1vf2wv9svj31120f2dll.jpg)
+
+
+
+
+
+## BIOS设置
+
+目前我的BIOS版本：`F10` 
+
+- 还原BIOS配置：
+
+> Save & Exit → Load Optimized Defaults
+
+- 方法一：BIOS手动配置
+  - 必做部分
+
+    > BIOS > CSM Support > Disabled
+
+如果你卡在了进度条很久都不动，例如这样
+
+![image-20190423134931921](https://ws4.sinaimg.cn/large/006tNc79gy1g2cirtywepj31400u0qow.jpg)
+
+那么下面是必做操作
+
+> BIOS > CSM Support > Disabled
+
+![image-20190423134954975](https://ws3.sinaimg.cn/large/006tNc79gy1g2cis6s6roj31400u0nm5.jpg)
+
+- 选做部分
+
+  (如果必做的操作可以让你顺利启动macOS那么就不用做以下操作，除非你清楚操作目的)
+
+	- 显卡部分
+	
+	  根据你有无独立显卡设置
+	
+	  - 核显调整    
+	
+	     - Peripherals → Initial Display Output : IGFX
+	     - Chipset → Integrated Graphics : Enabled
+	     - Chipset → DVMT Pre-Allocated :128M 
+	     
+	  - 外置显卡调整   
+	      - Peripherals → Initial Display Output : PCIe 1 Slot
+	      - Chipset → Integrated Graphics : Disabled
+	  
+	- 其他部分
+	
+	   - BIOS > Windows 8/10 Features > Windows 8/10
+	
+	   - BIOS > Secure Boot > Disabled
+	
+	   - Peripherals > Intel Platform Trust Technology (PTT) > Disabled
+	
+	   - Peripherals > USB Configuration > Legacy USB Support > Enabled
+	
+	   - Peripherals > Network Stack Configuration > Network Stack > Disabled
+	
+	   - Peripherals > USB Configuration > XHCI Hand-off > Enabled
+	
+	  
+	
+	   - Chipset > DVMT Pre-Alloc > 128M
+	   - Chipset > DVMT Total Gfx Mem > 256M
+	   - M.I.T > Extreme Memory Profile (X.M.P.) > Profile 1
+	   - Chipset > Vt-d > Disabled
+	   - Chipset > Above 4G Decoding > Enabled
+
+- 方法二：导入BIOS配置文件
+
+  我提供了已经配置好的BISO设置文件，你可以选择导入我配置的BIOS文件
+
+> **PS**:  
+>
+> - 一定要对应BIOS版本
+> - 我的版本只是用核显没有独立显卡
+
+1. 开机狂按`Del`进入BIOS界面
+2. 切换到`Save&Exit` 选择 `Load Profiles`，在弹出的对话框内选择对应的BIOS文件
+3. 出现`Profile Loaded`窗口后，点击`Save&Exit Setup`退出BIOS重启
+
+![image-20190423135030808](https://ws4.sinaimg.cn/large/006tNc79gy1g2cist7ruxj31400u0wyj.jpg)
+
+![image-20190423135038029](https://ws2.sinaimg.cn/large/006tNc79gy1g2cisxs8v3j31400u0k78.jpg)
+
+
 
 
 ## 网卡
