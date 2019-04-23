@@ -52,43 +52,86 @@
 > - 10.14.x  —> mojave  
 > - master  ---> 一般都是目前MacOS最新版本的配置 例如现在最新版本是mojave，master分支会和 mojave保持一致
 
-
 ## BIOS 设置
 
 目前我的BIOS版本：`F10` 
 
-> 现在默认的BIOS也可以启动了，其实并非需要修改的那么细致，不过这是我最早期安装的时候的BIOS设置，所以一直沿用下来，如果你熟悉了可以按需设置，如果你不熟悉，那还是按照下面的来设置一下
+### 还原BIOS配置：
 
-BIOS需要做以下修改:
+> Save & Exit → Load Optimized Defaults
 
-- 先把之前的配置还原：
+### 方法一：BIOS手动配置
 
-    - Save & Exit → Load Optimized Defaults
+#### 必做部分
 
-- 之后进行下述配置:
+如果你卡在了进度条很久都不动，例如这样
 
- -  M.I.T > Extreme Memory Profile (X.M.P.) > Profile 1
- -  BIOS > Windows 8/10 Features > Windows 8/10 (cuz there is not the option of "Other OS")
- -  BIOS > CSM Support > Disabled
- -  BIOS > Secure Boot > Disabled
- -  Peripherals > Intel Platform Trust Technology (PTT) > Disabled
- -  Peripherals > USB Configuration > Legacy USB Support > Enabled
- -  Peripherals > USB Configuration > XHCI Hand-off > Enabled
- -  Peripherals > Network Stack Configuration > Network Stack > Disabled
- -  Chipset > Vt-d > Disabled
- -  Chipset > DVMT Pre-Alloc > 64M
- -  Chipset > DVMT Total Gfx Mem > 256M
- -  Chipset > Above 4G Decoding > Enabled
+![image-20190423134931921](https://ws4.sinaimg.cn/large/006tNc79gy1g2cirtywepj31400u0qow.jpg)
 
-- 核显    
- -  Peripherals → Initial Display Output : IGFX
- -  Chipset → Integrated Graphics : Enabled
- -  Chipset → DVMT Pre-Allocated :128M 
+那么下面是必做操作
 
-- 外置显卡
- -  Peripherals → Initial Display Output : PCIe 1 Slot
- -  Chipset → Integrated Graphics : Disabled
+> BIOS > CSM Support > Disabled
 
+![image-20190423134954975](https://ws3.sinaimg.cn/large/006tNc79gy1g2cis6s6roj31400u0nm5.jpg)
+
+#### 选做部分
+
+  (如果必做的操作可以让你顺利启动macOS那么就不用做以下操作，除非你清楚操作目的)
+
+##### 显卡部分
+
+根据你有无独立显卡设置
+
+
+
+  - 核显调整    
+ - Peripherals → Initial Display Output : IGFX
+ - Chipset → Integrated Graphics : Enabled
+ - Chipset → DVMT Pre-Allocated :128M 
+
+
+
+- 外置显卡调整    
+ - Peripherals → Initial Display Output : PCIe 1 Slot
+ - Chipset → Integrated Graphics : Disabled
+
+##### 其他部分
+
+ - BIOS > Windows 8/10 Features > Windows 8/10
+
+ - BIOS > Secure Boot > Disabled
+
+ - Peripherals > Intel Platform Trust Technology (PTT) > Disabled
+
+ - Peripherals > USB Configuration > Legacy USB Support > Enabled
+
+ - Peripherals > Network Stack Configuration > Network Stack > Disabled
+
+ - Peripherals > USB Configuration > XHCI Hand-off > Enabled
+
+
+
+ - Chipset > DVMT Pre-Alloc > 128M
+ - Chipset > DVMT Total Gfx Mem > 256M
+ - M.I.T > Extreme Memory Profile (X.M.P.) > Profile 1
+ - Chipset > Vt-d > Disabled
+ - Chipset > Above 4G Decoding > Enabled
+
+### 方法二：导入BIOS配置文件
+
+我提供了已经配置好的BISO设置文件，你可以选择导入我配置的BIOS文件
+
+> **PS**:  
+> - 一定要对应BIOS版本
+> - 我的版本只是用核显没有独立显卡
+
+1. 开机狂按`Del`进入BIOS界面
+2. 切换到`Save&Exit` 选择 `Load Profiles`，在弹出的对话框内选择对应的BIOS文件
+3. 出现`Profile Loaded`窗口后，点击`Save&Exit Setup`退出BIOS重启
+
+![image-20190423135030808](https://ws4.sinaimg.cn/large/006tNc79gy1g2cist7ruxj31400u0wyj.jpg)
+
+![image-20190423135038029](https://ws2.sinaimg.cn/large/006tNc79gy1g2cisxs8v3j31400u0k78.jpg)
 
 ## 更新日志
 
