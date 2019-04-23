@@ -1,6 +1,11 @@
 [TOC]
 
 # z370n-wifi-hackintosh
+
+技嘉主板（ Z370N-WIFI） 黑苹果EFI文件
+
+假如你的主板用的和我的是一样的，那么你可以尝试直接使用我的EFI文件进行安装
+
 <!-- TOC -->
 
 - [z370n-wifi-hackintosh](#z370n-wifi-hackintosh)
