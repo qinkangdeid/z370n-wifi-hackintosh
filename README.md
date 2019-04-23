@@ -8,16 +8,9 @@
     - [分支介绍](#分支介绍)
     - [硬件配置](#硬件配置)
     - [更新日志](#更新日志)
-    - [BIOS 设置](#bios-设置)
-        - [还原BIOS配置：](#还原bios配置)
-        - [方法一：BIOS手动配置](#方法一bios手动配置)
-            - [必做部分](#必做部分)
-            - [选做部分](#选做部分)
-                - [显卡部分](#显卡部分)
-                - [其他部分](#其他部分)
-        - [方法二：导入BIOS配置文件](#方法二导入bios配置文件)
     - [安装](#安装)
     - [如何更新](#如何更新)
+    - [BIOS设置](#bios设置)
     - [网卡](#网卡)
     - [蓝牙/WIFI](#蓝牙wifi)
     - [USB定制](#usb定制)
@@ -63,17 +56,40 @@
 [查看更新日志](CHANGELOG.md)
 
 
-## BIOS 设置
+
+
+## 安装
+
+1. [安装前请先设置好BIOS](#BIOS设置)
+2. [查看安装方法](install.md)
+
+## 如何更新
+
+1. 复制最新的EFI文件到EFI分区即可
+2. 像白果一样去`软件更新`安装更新补丁即可
+
+- 检测更新
+
+  ![image-20190408184641508](https://ws1.sinaimg.cn/large/006tNc79gy1g1vf2epczdj30xj0u0qbg.jpg)
+
+  ![image-20190408184713467](https://ws3.sinaimg.cn/large/006tNc79gy1g1vf2wv9svj31120f2dll.jpg)
+
+
+
+
+
+## BIOS设置
 
 目前我的BIOS版本：`F10` 
 
-### 还原BIOS配置：
+- 还原BIOS配置：
 
 > Save & Exit → Load Optimized Defaults
 
-### 方法一：BIOS手动配置
+- 方法一：BIOS手动配置
+  - 必做部分
 
-#### 必做部分
+    > BIOS > CSM Support > Disabled
 
 如果你卡在了进度条很久都不动，例如这样
 
@@ -85,54 +101,52 @@
 
 ![image-20190423134954975](https://ws3.sinaimg.cn/large/006tNc79gy1g2cis6s6roj31400u0nm5.jpg)
 
-#### 选做部分
+- 选做部分
 
   (如果必做的操作可以让你顺利启动macOS那么就不用做以下操作，除非你清楚操作目的)
 
-##### 显卡部分
+	- 显卡部分
+	
+	  根据你有无独立显卡设置
+	
+	  - 核显调整    
+	
+	     - Peripherals → Initial Display Output : IGFX
+	     - Chipset → Integrated Graphics : Enabled
+	     - Chipset → DVMT Pre-Allocated :128M 
+	     
+	  - 外置显卡调整   
+	      - Peripherals → Initial Display Output : PCIe 1 Slot
+	      - Chipset → Integrated Graphics : Disabled
+	  
+	- 其他部分
+	
+	   - BIOS > Windows 8/10 Features > Windows 8/10
+	
+	   - BIOS > Secure Boot > Disabled
+	
+	   - Peripherals > Intel Platform Trust Technology (PTT) > Disabled
+	
+	   - Peripherals > USB Configuration > Legacy USB Support > Enabled
+	
+	   - Peripherals > Network Stack Configuration > Network Stack > Disabled
+	
+	   - Peripherals > USB Configuration > XHCI Hand-off > Enabled
+	
+	  
+	
+	   - Chipset > DVMT Pre-Alloc > 128M
+	   - Chipset > DVMT Total Gfx Mem > 256M
+	   - M.I.T > Extreme Memory Profile (X.M.P.) > Profile 1
+	   - Chipset > Vt-d > Disabled
+	   - Chipset > Above 4G Decoding > Enabled
 
-根据你有无独立显卡设置
+- 方法二：导入BIOS配置文件
 
-
-
-  - 核显调整    
- - Peripherals → Initial Display Output : IGFX
- - Chipset → Integrated Graphics : Enabled
- - Chipset → DVMT Pre-Allocated :128M 
-
-
-
-- 外置显卡调整    
- - Peripherals → Initial Display Output : PCIe 1 Slot
- - Chipset → Integrated Graphics : Disabled
-
-##### 其他部分
-
- - BIOS > Windows 8/10 Features > Windows 8/10
-
- - BIOS > Secure Boot > Disabled
-
- - Peripherals > Intel Platform Trust Technology (PTT) > Disabled
-
- - Peripherals > USB Configuration > Legacy USB Support > Enabled
-
- - Peripherals > Network Stack Configuration > Network Stack > Disabled
-
- - Peripherals > USB Configuration > XHCI Hand-off > Enabled
-
-
-
- - Chipset > DVMT Pre-Alloc > 128M
- - Chipset > DVMT Total Gfx Mem > 256M
- - M.I.T > Extreme Memory Profile (X.M.P.) > Profile 1
- - Chipset > Vt-d > Disabled
- - Chipset > Above 4G Decoding > Enabled
-
-### 方法二：导入BIOS配置文件
-
-我提供了已经配置好的BISO设置文件，你可以选择导入我配置的BIOS文件
+  我提供了已经配置好的BISO设置文件，你可以选择导入我配置的BIOS文件
 
 > **PS**:  
+>
 > - 一定要对应BIOS版本
 > - 我的版本只是用核显没有独立显卡
 
@@ -145,22 +159,6 @@
 ![image-20190423135038029](https://ws2.sinaimg.cn/large/006tNc79gy1g2cisxs8v3j31400u0k78.jpg)
 
 
-
-## 安装
-
-[查看安装方法](install.md)
-
-
-## 如何更新
-
-1. 复制最新的EFI文件到EFI分区即可
-2. 像白果一样去`软件更新`安装更新补丁即可
-
-- 检测更新
-
-  ![image-20190408184641508](https://ws1.sinaimg.cn/large/006tNc79gy1g1vf2epczdj30xj0u0qbg.jpg)
-
-  ![image-20190408184713467](https://ws3.sinaimg.cn/large/006tNc79gy1g1vf2wv9svj31120f2dll.jpg)
 
 
 ## 网卡
