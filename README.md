@@ -191,20 +191,33 @@
 ## USB定制
 
 USB有两种方法：
-- Hackintool定制
 
-  EFI里默认的使用方式是`Hackintool`软件制作`USBPorts.kext`
+- [Hackintool定制](<https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html>)
+
+  EFI里默认的使用方式是`Hackintool`软件制作`USBPorts.kext`和`SSDT-EC.aml`
+
+  > 将生成的两个文件复制到指定位置
+  
+  - `SSDT-EC.aml` 复制到 `EFI/CLOVER/ACPI/patched`
+  - `USBPorts.kext`分别复制到`EFI/CLOVER/kexts/Other`
+
 
   这种方式比较容易定制符合自己机箱的端口
 
 - [SSDT定制](https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/)
 
-  在SSDT文件夹里`SSDT-UIAC.aml`
-本质上两者应该没啥区别 只是定制的难易程度 我瞎猜的:smiley:  有大佬知道不要喷我
+  > 将SSDT文件夹里的复制到指定位置
+  
+  - `SSDT-UIAC.aml` 复制到 `EFI/CLOVER/ACPI/patched`
+  - `USBInjectAll.kext`分别复制到`EFI/CLOVER/kexts/Other`
+
+本质上两者应该没啥区别 只是定制的难易程度 我瞎猜的:smiley:
 
 **Z370N-WIFI USB端口位置**
 
-![image-20190413124841765](https://ws4.sinaimg.cn/large/006tNc79gy1g20wtg7bz9j30rs0go7dp.jpg)**以下是我目前定制的USB端口**，如果你要拓展你机箱上的USB口，具体修改方法参考[Hackintool(原Intel FB-Patcher)使用教程及插入姿势](<https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html>)，不过要确保在`15`个端口以内(含)，一个USB3.0就占用两个端口，用3.0的需求应该比2.0的多点吧，所以结合你自己的实际需要，你可以屏蔽USB3.0上的2.0端口以获取更多可用的USB3.0端口
+![image-20190413124841765](https://ws4.sinaimg.cn/large/006tNc79gy1g20wtg7bz9j30rs0go7dp.jpg)
+
+**以下是我目前定制的USB端口**，如果你要拓展你机箱上的USB口，具体修改方法参考[Hackintool(原Intel FB-Patcher)使用教程及插入姿势](<https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html>)，不过要确保在`15`个端口以内(含)，一个USB3.0就占用两个端口，用3.0的需求应该比2.0的多点吧，所以结合你自己的实际需要，你可以屏蔽USB3.0上的2.0端口以获取更多可用的USB3.0端口
 
 ![image-20190413125013669](https://ws3.sinaimg.cn/large/006tNc79gy1g20wv06u38j30u00zlwlf.jpg)
 
