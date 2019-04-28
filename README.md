@@ -15,12 +15,13 @@
     - [分支介绍](#分支介绍)
     - [硬件配置](#硬件配置)
     - [更新日志](#更新日志)
-    - [安装](#安装)
+    - [安装macOS](#安装macos)
     - [如何更新](#如何更新)
     - [BIOS设置](#bios设置)
     - [网卡](#网卡)
     - [蓝牙/WIFI](#蓝牙wifi)
     - [USB定制](#usb定制)
+        - [Z370N-WIFI USB端口位置](#z370n-wifi-usb端口位置)
     - [后续问题解决途径](#后续问题解决途径)
 
 <!-- /TOC -->
@@ -65,7 +66,7 @@
 
 
 
-## 安装
+## 安装macOS
 
 1. [安装前请先设置好BIOS](#BIOS设置)
 2. [查看安装方法](install.md)
@@ -190,16 +191,21 @@
 
 ## USB定制
 
-USB有两种方法：
+> EFI里默认的使用方式是`Hackintool`软件制作,
+如果你要自定义更加符合你机箱上的USB端口排列，任选下面其中一个方法即可，你只需要根据自己需要增删相应端口即可,Z370N-WIFI所有的USB端口已经全部标记出来了[点我查看](#Z370N-WIFI USB端口位置)
+
+> 要确保U总共的USB端口在`15`个以内(含)，一个USB3.0就占用两个端口，用3.0的需求应该比2.0的多点吧，所以结合你自己的实际需要，你可以屏蔽USB3.0上的2.0端口以获取更多可用的USB3.0端口
+
+**USB有两种方法**
 
 - [Hackintool定制](<https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html>)
 
-  EFI里默认的使用方式是`Hackintool`软件制作`USBPorts.kext`和`SSDT-EC.aml`
+
 
   > 将生成的两个文件复制到指定位置
   
   - `SSDT-EC.aml` 复制到 `EFI/CLOVER/ACPI/patched`
-  - `USBPorts.kext`分别复制到`EFI/CLOVER/kexts/Other`
+  - `USBPorts.kext`复制到`EFI/CLOVER/kexts/Other`
 
 
   这种方式比较容易定制符合自己机箱的端口
@@ -209,15 +215,15 @@ USB有两种方法：
   > 将SSDT文件夹里的复制到指定位置
   
   - `SSDT-UIAC.aml` 复制到 `EFI/CLOVER/ACPI/patched`
-  - `USBInjectAll.kext`分别复制到`EFI/CLOVER/kexts/Other`
+  - `USBInjectAll.kext`复制到`EFI/CLOVER/kexts/Other`
 
 本质上两者应该没啥区别 只是定制的难易程度 我瞎猜的:smiley:
 
-**Z370N-WIFI USB端口位置**
+### Z370N-WIFI USB端口位置
 
 ![image-20190413124841765](https://ws4.sinaimg.cn/large/006tNc79gy1g20wtg7bz9j30rs0go7dp.jpg)
 
-**以下是我目前定制的USB端口**，如果你要拓展你机箱上的USB口，具体修改方法参考[Hackintool(原Intel FB-Patcher)使用教程及插入姿势](<https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html>)，不过要确保在`15`个端口以内(含)，一个USB3.0就占用两个端口，用3.0的需求应该比2.0的多点吧，所以结合你自己的实际需要，你可以屏蔽USB3.0上的2.0端口以获取更多可用的USB3.0端口
+**以下是我目前定制的USB端口**
 
 ![image-20190413125013669](https://ws3.sinaimg.cn/large/006tNc79gy1g20wv06u38j30u00zlwlf.jpg)
 
