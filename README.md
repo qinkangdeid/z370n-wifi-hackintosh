@@ -8,6 +8,10 @@
 
 所有资源都来源于网络，这是我实践后的结果副本，感谢互联网上那些为黑苹果做出贡献的所有人，当然也要感谢Apple:smile:
 
+
+
+![image-20190512105245557](https://ws3.sinaimg.cn/large/006tNc79gy1g2ycfwkqivj31400u0npo.jpg)
+
 <!-- TOC -->
 
 - [z370n-wifi-hackintosh](#z370n-wifi-hackintosh)
