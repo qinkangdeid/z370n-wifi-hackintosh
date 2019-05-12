@@ -11,6 +11,7 @@
 
 
 ![desktop.jpeg](desktop.jpeg)
+![about.png](about.png)
 
 <!-- TOC -->
 
