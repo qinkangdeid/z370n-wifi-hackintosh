@@ -10,7 +10,7 @@
 
 
 
-![image-20190512105245557](https://ws3.sinaimg.cn/large/006tNc79gy1g2ycfwkqivj31400u0npo.jpg)
+![desktop.jpeg](desktop.jpeg)
 
 <!-- TOC -->
 
@@ -208,7 +208,7 @@
 
 
   > 将生成的两个文件复制到指定位置
-  
+
   - `SSDT-EC.aml` 复制到 `EFI/CLOVER/ACPI/patched`
   - `USBPorts.kext`复制到`EFI/CLOVER/kexts/Other`
 
