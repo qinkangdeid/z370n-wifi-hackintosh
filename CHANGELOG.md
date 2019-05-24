@@ -1,5 +1,11 @@
 [TOC]
 
+## 2019-05-24
+- Clover Version update to: 4934
+- AppleALC | Version: 1.3.8
+- WhateverGreen | Version: 1.2.9
+- Lilu | Version: 1.3.6
+
 ## 2019-04-16
 - Clover Version update to: 4920
 - 更新了BIOS配置描述 建议看看
