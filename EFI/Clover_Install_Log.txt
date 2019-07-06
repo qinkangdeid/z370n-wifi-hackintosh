@@ -1,6 +1,6 @@
 
-Clover EFI installer log - Sun Jun 23 00:10:11 CST 2019
-Installer version: v2.4k r4961 EFI bootloader
+Clover EFI installer log - Sat Jun 29 12:13:59 CST 2019
+Installer version: v2.4k r4972 EFI bootloader
 ======================================================
 /dev/disk0 (internal):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
@@ -12,7 +12,7 @@ Installer version: v2.4k r4961 EFI bootloader
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      APFS Container Scheme -                      +511.8 GB   disk1
                                  Physical Store disk0s2
-   1:                APFS Volume macOS                   53.0 GB    disk1s1
+   1:                APFS Volume macOS                   57.2 GB    disk1s1
    2:                APFS Volume Preboot                 45.6 MB    disk1s2
    3:                APFS Volume Recovery                512.3 MB   disk1s3
    4:                APFS Volume VM                      4.3 GB     disk1s4
@@ -21,12 +21,22 @@ Target volume /Volumes/macOS on disk1 is APFS on physical store disk0s2
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/macOS/EFIROOTDIR/EFI folder to /Volumes/macOS/EFI-Backups/r4945/2019-06-23-00h10/EFI
+Backing up /Volumes/macOS/EFIROOTDIR/EFI folder to /Volumes/macOS/EFI-Backups/r4961/2019-06-29-12h13/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
 Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
 Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing drivers64UEFI/AppleImageCodec-64.efi driver because AppleUiSupport driver present
+
+Removing drivers64UEFI/AppleKeyAggregator-64.efi driver because AppleUiSupport driver present
+
+Removing drivers64UEFI/AppleUITheme-64.efi driver because AppleUiSupport driver present
+
+Removing drivers64UEFI/FirmwareVolume-64.efi driver because AppleUiSupport driver present
+
+Removing drivers64UEFI/HashServiceFix-64.efi driver because AppleUiSupport driver present
 
 ======================================================
 =========== Clover EFI Installation Finish ===========
