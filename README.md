@@ -10,8 +10,9 @@
 
 
 
-![desktop.jpeg](desktop.jpeg)
-![about.png](about.png)
+![desktop.jpeg](imgs/desktop.jpeg)
+![desktop.jpeg](imgs/moniter.png)
+![about.png](imgs/about.png)
 
 <!-- TOC -->
 
