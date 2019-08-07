@@ -28,6 +28,7 @@
     - [蓝牙/WIFI](#蓝牙wifi)
     - [USB定制](#usb定制)
         - [Z370N-WIFI主板USB端口位置](#z370n-wifi主板usb端口位置)
+    - [独显问题](#独显问题)
     - [后续问题解决途径](#后续问题解决途径)
 
 <!-- /TOC -->
@@ -64,6 +65,8 @@
 | 内存           | 骇客神条16GB  / 芝奇幻光戟 32G / 海盗船 32G              |
 | SSD            | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO |
 |显卡| RX570蓝宝石 |
+
+> 三星PM981不支持MacOS！！！请不要买这块硬盘
 
 ## 更新日志
 
@@ -234,6 +237,11 @@
 
 ![image-20190413124841765](https://ws4.sinaimg.cn/large/006tNc79gy1g20wtg7bz9j30rs0go7dp.jpg)
 
+
+
+## 独显问题
+    - [JPEG图片无法预览（预览卡死）](https://github.com/qinkangdeid/z370n-wifi-hackintosh/issues/63)
+    -   
 
 
 ## 后续问题解决途径
