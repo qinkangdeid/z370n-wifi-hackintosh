@@ -1,27 +1,27 @@
 
-Clover EFI installer log - Sun Jul 14 21:57:43 CST 2019
-Installer version: v2.4k r4988 EFI bootloader
+Clover EFI installer log - Tue Sep 10 21:53:54 CST 2019
+Installer version: v2.5k r5070 EFI bootloader
 ======================================================
 /dev/disk0 (internal):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      GUID_partition_scheme                         512.1 GB   disk0
-   1:                        EFI ESP                     238.0 MB   disk0s1
-   2:                 Apple_APFS Container disk1         511.9 GB   disk0s2
+   1:                        EFI                         314.6 MB   disk0s1
+   2:                 Apple_APFS Container disk1         511.8 GB   disk0s2
 
 /dev/disk1 (synthesized):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      APFS Container Scheme -                      +511.9 GB   disk1
+   0:      APFS Container Scheme -                      +511.8 GB   disk1
                                  Physical Store disk0s2
-   1:                APFS Volume macOS                   47.6 GB    disk1s1
-   2:                APFS Volume Preboot                 45.6 MB    disk1s2
-   3:                APFS Volume Recovery                509.7 MB   disk1s3
+   1:                APFS Volume macOS                   117.3 GB   disk1s1
+   2:                APFS Volume Preboot                 45.7 MB    disk1s2
+   3:                APFS Volume Recovery                510.3 MB   disk1s3
    4:                APFS Volume VM                      2.1 GB     disk1s4
 
 Target volume /Volumes/macOS on disk1 is APFS on physical store disk0s2
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/macOS/EFIROOTDIR/EFI folder to /Volumes/macOS/EFI-Backups/r4988/2019-07-14-21h57/EFI
+Backing up /Volumes/macOS/EFIROOTDIR/EFI folder to /Volumes/macOS/EFI-Backups/r5045/2019-09-10-21h53/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
@@ -31,6 +31,12 @@ Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
 Removing UEFI/AppleImageCodec.efi driver because AppleUiSupport driver present
 
 Removing UEFI/AppleKeyAggregator.efi driver because AppleUiSupport driver present
+
+Removing UEFI/AppleUITheme.efi driver because AppleUiSupport driver present
+
+Removing UEFI/FirmwareVolume.efi driver because AppleUiSupport driver present
+
+Removing UEFI/HashServiceFix.efi driver because AppleUiSupport driver present
 
 ======================================================
 =========== Clover EFI Installation Finish ===========
