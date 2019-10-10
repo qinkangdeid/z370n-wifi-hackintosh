@@ -10,7 +10,8 @@
 
 
 
-![desktop.jpeg](imgs/desktop.jpeg)
+![desktop](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/%E6%88%AA%E5%B1%8F2019-10-10%E4%B8%8B%E5%8D%8811.50.25.png)
+
 ![desktop.jpeg](imgs/moniter.png)
 ![about.png](imgs/about.png)
 
