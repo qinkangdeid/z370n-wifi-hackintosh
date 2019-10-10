@@ -8,11 +8,9 @@
 
 所有资源都来源于网络，这是我实践后的结果副本，感谢互联网上那些为黑苹果做出贡献的所有人，当然也要感谢Apple:smile:
 
-
+![desktop.jpeg](imgs/moniter.png)
 
 ![desktop](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/%E6%88%AA%E5%B1%8F2019-10-10%E4%B8%8B%E5%8D%8811.50.25.png)
-
-![desktop.jpeg](imgs/moniter.png)
 ![about.png](imgs/about.png)
 
 <!-- TOC -->
