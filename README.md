@@ -9,6 +9,7 @@
 - [z370n-wifi-hackintosh](#z370n-wifi-hackintosh)
     - [说明](#说明)
     - [目录一览](#目录一览)
+    - [截图](#截图)
     - [分支介绍](#分支介绍)
     - [硬件配置](#硬件配置)
     - [更新日志](#更新日志)
@@ -53,6 +54,13 @@
 ![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/%E6%88%AA%E5%B1%8F2019-10-10%E4%B8%8B%E5%8D%8811.50.25.png)
 ![desktop.jpeg](imgs/desktop.jpeg)
 ![moniter.jpeg](imgs/moniter.png)
+![graphics](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/graphics.jpg)
+![usb](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/usb.png)
+![disk](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/disk.png)
+![bluetooth](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/bluetooth.png)
+![wifi](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/wifi.png)
+
+
 
 
 
