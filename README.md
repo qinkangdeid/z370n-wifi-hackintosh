@@ -8,6 +8,7 @@
 
 - [z370n-wifi-hackintosh](#z370n-wifi-hackintosh)
     - [说明](#说明)
+    - [截图](#截图)
     - [目录一览](#目录一览)
     - [分支介绍](#分支介绍)
     - [硬件配置](#硬件配置)
@@ -38,6 +39,17 @@
 > 这是一个折腾的过程，也许你会碰到我没有曾碰到过的事情，所以请做好心理准备，`生命不息，折腾不止`。
 
 
+## 截图
+
+![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/%E6%88%AA%E5%B1%8F2019-10-10%E4%B8%8B%E5%8D%8811.50.25.png)
+![desktop.jpeg](imgs/desktop.jpeg)
+![moniter.jpeg](imgs/moniter.png)
+![graphics](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/graphics.jpg)
+![usb](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/usb.png)
+![disk](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/disk.png)
+![bluetooth](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/bluetooth.png)
+![wifi](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/wifi.png)
+
 
 ## 目录一览
 
@@ -48,19 +60,15 @@
     ├── README.md   ---- README.md 
 ```
 
-## 截图
-
-![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/%E6%88%AA%E5%B1%8F2019-10-10%E4%B8%8B%E5%8D%8811.50.25.png)
-![desktop.jpeg](imgs/desktop.jpeg)
-![moniter.jpeg](imgs/moniter.png)
 
 
 
 ## 分支介绍
 > 一般的 你只需要将EFI整个复制到你制作的启动U盘里的EFI分区即可,其他文件只是我的备份
+> - 10.15.x  —> catalina 
+> - 10.14.x  —> mojave 
 > - 10.13.x  —> high-sierra
-> - 10.14.x  —> mojave  
-> - master  ---> 一般都是目前MacOS最新版本的配置 例如现在最新版本是mojave，master分支会和 mojave保持一致
+> - master  ---> 一般都是目前MacOS最新版本，例如现在最新版本是`catalina`，`master`分支会和 `catalina`保持一致
 
 
 ## 硬件配置
