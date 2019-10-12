@@ -8,8 +8,8 @@
 
 - [z370n-wifi-hackintosh](#z370n-wifi-hackintosh)
     - [说明](#说明)
-    - [目录一览](#目录一览)
     - [截图](#截图)
+    - [目录一览](#目录一览)
     - [分支介绍](#分支介绍)
     - [硬件配置](#硬件配置)
     - [更新日志](#更新日志)
@@ -39,16 +39,6 @@
 > 这是一个折腾的过程，也许你会碰到我没有曾碰到过的事情，所以请做好心理准备，`生命不息，折腾不止`。
 
 
-
-## 目录一览
-
-```bash
-└── z370n-wifi-hackintosh
-    ├── EFI       ---- MacOS引导文件
-    ├── CHANGELOG.md    ---- 更新日志 
-    ├── README.md   ---- README.md 
-```
-
 ## 截图
 
 ![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/%E6%88%AA%E5%B1%8F2019-10-10%E4%B8%8B%E5%8D%8811.50.25.png)
@@ -60,6 +50,15 @@
 ![bluetooth](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/bluetooth.png)
 ![wifi](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/wifi.png)
 
+
+## 目录一览
+
+```bash
+└── z370n-wifi-hackintosh
+    ├── EFI       ---- MacOS引导文件
+    ├── CHANGELOG.md    ---- 更新日志 
+    ├── README.md   ---- README.md 
+```
 
 
 
