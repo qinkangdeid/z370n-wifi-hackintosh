@@ -241,9 +241,8 @@
 
 
 
-## 独显问题
-    - [JPEG图片无法预览（预览卡死）](https://github.com/qinkangdeid/z370n-wifi-hackintosh/issues/63)
-    -   
+## 常用软件
+[kextupdater](https://bitbucket.org/profdrluigi/kextupdater/downloads/)
 
 
 ## 后续问题解决途径
