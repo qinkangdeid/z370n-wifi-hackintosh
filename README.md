@@ -76,6 +76,7 @@
 | SSD            | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO |
 |显卡| RX570蓝宝石 |
 
+### 不兼容硬件
 > 三星PM981不支持MacOS！！！请不要买这块硬盘
 
 ## 更新日志
