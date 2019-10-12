@@ -251,7 +251,11 @@
 ## 驱动详情
 
 ## 常用软件
+[Clover Configurator](https://sourceforge.net/projects/cloverefiboot/files/)
 [kextupdater](https://bitbucket.org/profdrluigi/kextupdater/downloads/)
+[Kext Utility](http://cvad-mac.narod.ru/index/0-4)
+
+
 
 
 ## 后续问题解决途径
