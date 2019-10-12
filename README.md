@@ -19,7 +19,8 @@
     - [蓝牙/WIFI](#蓝牙wifi)
     - [USB定制](#usb定制)
         - [Z370N-WIFI主板USB端口位置](#z370n-wifi主板usb端口位置)
-    - [独显问题](#独显问题)
+    - [驱动详情](#驱动详情)
+    - [常用软件](#常用软件)
     - [后续问题解决途径](#后续问题解决途径)
 
 <!-- /TOC -->
@@ -247,6 +248,7 @@
 ![image-20190413124841765](https://ws4.sinaimg.cn/large/006tNc79gy1g20wtg7bz9j30rs0go7dp.jpg)
 
 
+## 驱动详情
 
 ## 常用软件
 [kextupdater](https://bitbucket.org/profdrluigi/kextupdater/downloads/)
