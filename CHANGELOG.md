@@ -1,5 +1,12 @@
 [TOC]
 
+
+## 2019-10-09
+- macOS | Version: `10.15`
+- AppleALC | Version: 1.4.2
+- WhateverGreen | Version: 1.3.3
+
+
 ## 2019-07-06
 - Clover Version update to: r5070
 - AppleALC | Version: 1.4.1
