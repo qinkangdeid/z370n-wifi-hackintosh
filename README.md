@@ -42,8 +42,6 @@
     ├── EFI       ---- MacOS引导文件
     ├── CHANGELOG.md    ---- 更新日志 
     ├── README.md   ---- README.md 
-    ├── BIOS     ---- 主板相关bios(包含原始BIOS和适用于MacOS下的BIOS设置文件) 
-    └── SSDT  ---- SSDT方式定制的USB patch文件
 ```
 
 ## 分支介绍
