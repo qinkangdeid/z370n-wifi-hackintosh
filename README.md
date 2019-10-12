@@ -9,11 +9,9 @@
 所有资源都来源于网络，这是我实践后的结果副本，感谢互联网上那些为黑苹果做出贡献的所有人，当然也要感谢Apple:smile:
 
 
-> 这是一个折腾的过程，也许你会碰到我没有曾碰到过的事情，所以请做好心理准备，拿出`生命不息，折腾不止`的精神。
+> 这是一个折腾的过程，也许你会碰到我没有曾碰到过的事情，所以请做好心理准备，`生命不息，折腾不止`。
 
-![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/%E6%88%AA%E5%B1%8F2019-10-10%E4%B8%8B%E5%8D%8811.50.25.png)
-![desktop.jpeg](imgs/desktop.jpeg)
-![moniter.jpeg](imgs/moniter.png)	
+	
 
 
 <!-- TOC -->
@@ -43,6 +41,14 @@
     ├── CHANGELOG.md    ---- 更新日志 
     ├── README.md   ---- README.md 
 ```
+
+## 截图
+
+![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/%E6%88%AA%E5%B1%8F2019-10-10%E4%B8%8B%E5%8D%8811.50.25.png)
+![desktop.jpeg](imgs/desktop.jpeg)
+![moniter.jpeg](imgs/moniter.png)
+
+
 
 ## 分支介绍
 > 一般的 你只需要将EFI整个复制到你制作的启动U盘里的EFI分区即可,其他文件只是我的备份
