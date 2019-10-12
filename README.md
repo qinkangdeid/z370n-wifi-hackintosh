@@ -66,9 +66,10 @@
 
 ## 分支介绍
 > 一般的 你只需要将EFI整个复制到你制作的启动U盘里的EFI分区即可,其他文件只是我的备份
+> - 10.15.x  —> catalina 
+> - 10.14.x  —> mojave 
 > - 10.13.x  —> high-sierra
-> - 10.14.x  —> mojave  
-> - master  ---> 一般都是目前MacOS最新版本的配置 例如现在最新版本是mojave，master分支会和 mojave保持一致
+> - master  ---> 一般都是目前MacOS最新版本，例如现在最新版本是`catalina`，`master`分支会和 `catalina`保持一致
 
 
 ## 硬件配置
