@@ -1,10 +1,10 @@
 [TOC]
 
-
 ## 2019-10-09
 - macOS | Version: `10.15`
 - AppleALC | Version: 1.4.2
 - WhateverGreen | Version: 1.3.3
+- VirtualSMC.kext 替换 FakeSMC.kext
 
 
 ## 2019-07-06
