@@ -264,7 +264,11 @@
 ## 驱动详情
 
 ## 常用软件
+
+[macOS Patcher镜像下载](http://dosdude1.com)
+
 [U盘启动install-disk-creator](https://macdaddy.io/install-disk-creator/)
+
 [Clover Configurator](https://sourceforge.net/projects/cloverefiboot/files/)
 
 [kextupdater](https://bitbucket.org/profdrluigi/kextupdater/downloads/)
