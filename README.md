@@ -143,44 +143,43 @@
 > Save & Exit → Load Optimized Defaults
 
 - 方法一：BIOS手动配置
-  
-  - BIOS > CSM Support > Disabled
-- BIOS > Windows 8/10 Features > Windows 8/10
-  - BIOS > Secure Boot > Disabled
-  
-  
-  
-  - Peripherals > Intel Platform Trust Technology (PTT) > Disabled
-  - Peripherals > USB Configuration > Legacy USB Support > Enabled
-  - Peripherals > Network Stack Configuration > Network Stack > Disabled
-  - Peripherals > USB Configuration > XHCI Hand-off > Enabled
-  
     
+    - BIOS > CSM Support > Disabled
+    - BIOS > Windows 8/10 Features > Windows 8/10
+    - BIOS > Secure Boot > Disabled
+    
+    
+    
+    - Peripherals > Intel Platform Trust Technology (PTT) > Disabled
+    - Peripherals > USB Configuration > Legacy USB Support > Enabled
+    - Peripherals > Network Stack Configuration > Network Stack > Disabled
+    - Peripherals > USB Configuration > XHCI Hand-off > Enabled
+    
+        
+    
+    - Chipset > DVMT Pre-Alloc > 128M
+    - Chipset > DVMT Total Gfx Mem > 256M
+    - Chipset > Vt-d > Disabled
+    - Chipset > Above 4G Decoding > Enabled
+
+    - 显卡部分
+
+    根据你有无独立显卡设置
+
+    - 核显调整    
+
+        - Peripherals → Initial Display Output : IGFX
+        - Chipset → Integrated Graphics : Enabled
+        - Chipset → DVMT Pre-Allocated :128M 
+    - 外置显卡调整   
+        - Peripherals → Initial Display Output : PCIe 1 Slot
+        - Chipset → Integrated Graphics : Disabled
   
-     - Chipset > DVMT Pre-Alloc > 128M
-     - Chipset > DVMT Total Gfx Mem > 256M
-  
-     - Chipset > Vt-d > Disabled
-     - Chipset > Above 4G Decoding > Enabled
+    - 选做部分
 
-- 显卡部分
+    > 如果你的内存条频率过了2666 可以提高频率
 
-  根据你有无独立显卡设置
-
-  - 核显调整    
-
-     - Peripherals → Initial Display Output : IGFX
-     - Chipset → Integrated Graphics : Enabled
-     - Chipset → DVMT Pre-Allocated :128M 
-  - 外置显卡调整   
-      - Peripherals → Initial Display Output : PCIe 1 Slot
-      - Chipset → Integrated Graphics : Disabled
-  
-- 选做部分
-
-> 如果你的内存条频率过了2666 可以提高频率
-
-- M.I.T > Extreme Memory Profile (X.M.P.) > Profile 1
+    - M.I.T > Extreme Memory Profile (X.M.P.) > Profile 1
 
 - 方法二：导入BIOS配置文件
 
