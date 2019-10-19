@@ -262,7 +262,6 @@
 ![image-20190413124841765](https://ws4.sinaimg.cn/large/006tNc79gy1g20wtg7bz9j30rs0go7dp.jpg)
 
 
-
 ## 常用软件
 
 [macOS Patcher镜像下载](http://dosdude1.com)
@@ -274,9 +273,6 @@
 [kextupdater](https://bitbucket.org/profdrluigi/kextupdater/downloads/)
 
 [Kext Utility](http://cvad-mac.narod.ru/index/0-4)
-
-
-
 
 
 ## 后续问题解决途径
