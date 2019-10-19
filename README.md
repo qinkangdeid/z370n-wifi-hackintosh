@@ -166,14 +166,14 @@
 
         根据你有无独立显卡设置
 
-    - 核显调整    
+        - 核显调整    
 
-        - Peripherals → Initial Display Output : IGFX
-        - Chipset → Integrated Graphics : Enabled
-        - Chipset → DVMT Pre-Allocated :128M 
-    - 外置显卡调整   
-        - Peripherals → Initial Display Output : PCIe 1 Slot
-        - Chipset → Integrated Graphics : Disabled
+            - Peripherals → Initial Display Output : IGFX
+            - Chipset → Integrated Graphics : Enabled
+            - Chipset → DVMT Pre-Allocated :128M 
+        - 外置显卡调整   
+            - Peripherals → Initial Display Output : PCIe 1 Slot
+            - Chipset → Integrated Graphics : Disabled
   
     - 选做部分
 
