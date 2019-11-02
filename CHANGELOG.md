@@ -1,5 +1,11 @@
 [TOC]
 
+## 2019-11-02
+- macOS | Version: `10.15.1`
+- AppleALC | Version: 1.4.3
+- WhateverGreen | Version: 1.3.4
+- VirtualSMC.kext | Version: 1.0.9
+
 ## 2019-10-09
 - macOS | Version: `10.15`
 - AppleALC | Version: 1.4.2
