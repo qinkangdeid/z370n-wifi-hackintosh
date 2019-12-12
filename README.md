@@ -1,6 +1,6 @@
 [TOC]
 
-# z370n-wifi-hackintosh
+# 1. z370n-wifi-hackintosh
 
 技嘉主板（ Z370N-WIFI） 黑苹果EFI文件
 
@@ -26,7 +26,7 @@
 <!-- /TOC -->
 
 
-## 说明 
+## 1.1. 说明 
 
 如果你的主板和我的是一样的，那么你可以尝试直接使用这个EFI文件进行安装。
 
@@ -36,9 +36,9 @@
 > 这是一个折腾的过程，也许你会碰到我没有曾碰到过的问题，所以请做好心理准备，`生命不息，折腾不止`。
 
 
-## 截图
+## 1.2. 截图
 
-![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/%E6%88%AA%E5%B1%8F2019-10-10%E4%B8%8B%E5%8D%8811.50.25.png)
+![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/img/20191212111202.png)
 ![desktop.jpeg](imgs/desktop.jpeg)
 ![moniter.jpeg](imgs/moniter.png)
 ![graphics](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/graphics.jpg)
@@ -48,7 +48,7 @@
 ![wifi](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/wifi.png)
 
 
-## 目录一览
+## 1.3. 目录一览
 
 ```bash
 └── z370n-wifi-hackintosh
@@ -60,7 +60,7 @@
 
 
 
-## 分支介绍
+## 1.4. 分支介绍
 > 一般的 你只需要将EFI整个复制到你制作的启动U盘里的EFI分区即可,其他文件只是我的备份
 > - 10.15.x  —> catalina 
 > - 10.14.x  —> mojave 
@@ -68,7 +68,7 @@
 > - master  ---> 是目前MacOS最新版本，例如现在最新版本是`catalina`，`master`分支会和 `catalina`保持一致
 
 
-## 硬件配置
+## 1.5. 硬件配置
 
 > 包含我所知的网友的配置
 
@@ -83,15 +83,15 @@
 | SSD            | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO |
 |显卡| RX570蓝宝石 |
 
-## 不兼容硬件
+## 1.6. 不兼容硬件
 
 - 三星PM981
 
-## 更新日志
+## 1.7. 更新日志
 
 [查看更志](CHANGELOG.md)
 
-## 工作情况
+## 1.8. 工作情况
 
 - [x] 网卡
 
@@ -107,7 +107,7 @@
 
 - [x] 睡眠
 
-## 未解决问题
+## 1.9. 未解决问题
 
 
 - [ ] 核显带动双4K显示器睡眠唤醒HDMI接口会闪烁
@@ -118,12 +118,12 @@
 
 
 
-## 系统安装
+## 1.10. 系统安装
 
 1. [安装前设置BIOS](#BIOS设置)
 2. [查看安装方法](install.md)
 
-## 如何更新
+## 1.11. 如何更新
 
 1. 复制最新的EFI文件到EFI分区
 2. 像白果一样去`软件更新`安装更新补丁即可
@@ -134,7 +134,7 @@
 
   ![image-20190408184713467](https://ws3.sinaimg.cn/large/006tNc79gy1g1vf2wv9svj31120f2dll.jpg)
 
-## BIOS设置
+## 1.12. BIOS设置
 
 目前我的BIOS版本：`F10` 
 
@@ -198,7 +198,7 @@
 
 ![image-20190423135038029](https://ws2.sinaimg.cn/large/006tNc79gy1g2cisxs8v3j31400u0k78.jpg)
 
-## 驱动详情
+## 1.13. 驱动详情
 
 - 网卡
 
@@ -262,7 +262,7 @@
 ![image-20190413124841765](https://ws4.sinaimg.cn/large/006tNc79gy1g20wtg7bz9j30rs0go7dp.jpg)
 
 
-## 常用软件
+## 1.14. 常用软件
 
 [macOS Patcher镜像下载](http://dosdude1.com)
 
@@ -275,7 +275,7 @@
 [Kext Utility](http://cvad-mac.narod.ru/index/0-4)
 
 
-## 后续问题解决途径
+## 1.15. 后续问题解决途径
 
 - [Google is your good friend](https://www.google.com)
 - [黑果小兵博客](https://blog.daliansky.net)
