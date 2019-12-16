@@ -34,6 +34,7 @@
 
 
 > 这是一个折腾的过程，也许你会碰到我没有曾碰到过的问题，所以请做好心理准备，`生命不息，折腾不止`。
+> 也希望同样配置的用户可以一起维护这个Repo 🙏
 
 
 ## 1.2. 截图
@@ -46,6 +47,7 @@
 ![disk](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/disk.png)
 ![bluetooth](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/bluetooth.png)
 ![wifi](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/wifi.png)
+![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/20191210232127.png)
 
 
 ## 1.3. 目录一览
@@ -219,7 +221,8 @@
       
   2. DW1560(BCM94352Z) 
   
-      这块网卡需要添加相应驱动，参考黑果小兵版主的[教程](https://blog.daliansky.net/Broadcom-BCM94352z-DW1560-drive-new-posture.html)设置
+      这块网卡需要添加相应驱动，可以尝试直接使用`Kexts for Dw1560`文件夹里的驱动复制到`EFI/CLOVER/kexts/Other/ `
+      如果还不行请参考黑果小兵版主的[教程](https://blog.daliansky.net/Broadcom-BCM94352z-DW1560-drive-new-posture.html)设置
 
 - USB定制
 
