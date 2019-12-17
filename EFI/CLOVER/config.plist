@@ -4,6 +4,31 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
+		<key>DSDT</key>
+		<dict>
+			<key>Fixes</key>
+			<dict>
+				<key>AddDTGP</key>
+				<false/>
+			</dict>
+			<key>Patches</key>
+			<array>
+				<dict>
+					<key>Comment</key>
+					<string>F13 BIOS ACPI Patch</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					oAqTU1RBUwE=
+					</data>
+					<key>Replace</key>
+					<data>
+					oAqRCv8L//8=
+					</data>
+				</dict>
+			</array>
+		</dict>
 		<key>SSDT</key>
 		<dict>
 			<key>Generate</key>
