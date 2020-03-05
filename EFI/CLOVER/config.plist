@@ -19,13 +19,9 @@
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
-					<data>
-					oAqTU1RBUwE=
-					</data>
+					<data>oAqTU1RBUwE=</data>
 					<key>Replace</key>
-					<data>
-					oAqRCv8L//8=
-					</data>
+					<data>oAqRCv8L//8=</data>
 				</dict>
 			</array>
 		</dict>
@@ -43,7 +39,7 @@
 		<key>Arguments</key>
 		<string>darkwake=2 dart=0 -disablegfxfirmware</string>
 		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
+		<string>Macintosh HD</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Timeout</key>
@@ -71,74 +67,44 @@
 				<key>device_type</key>
 				<string>Audio device</string>
 				<key>layout-id</key>
-				<data>
-				BwAAAA==
-				</data>
+				<data>BwAAAA==</data>
 				<key>model</key>
 				<string>200 Series PCH HD Audio</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				BwCbPg==
-				</data>
+				<data>BwCbPg==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,2,0</string>
 				<key>device-id</key>
-				<data>
-				kj4AAA==
-				</data>
+				<data>kj4AAA==</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
 				<key>enable-hdmi20</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con0-busid</key>
-				<data>
-				AgAAAA==
-				</data>
+				<data>AgAAAA==</data>
 				<key>framebuffer-con0-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con0-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
+				<data>EgAAAA==</data>
 				<key>framebuffer-con0-type</key>
-				<data>
-				AAgAAA==
-				</data>
+				<data>AAgAAA==</data>
 				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
+				<data>EgAAAA==</data>
 				<key>framebuffer-con1-type</key>
-				<data>
-				AAgAAA==
-				</data>
+				<data>AAgAAA==</data>
 				<key>framebuffer-con2-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
+				<data>EgAAAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-unifiedmem</key>
-				<data>
-				AAAAgA==
-				</data>
+				<data>AAAAgA==</data>
 				<key>model</key>
 				<string>Intel UHD Graphics 630 (Desktop)</string>
 			</dict>
@@ -185,8 +151,10 @@
 				</dict>
 			</array>
 		</dict>
+		<key>EmbeddedThemeType</key>
+		<string>Dark</string>
 		<key>Language</key>
-		<string>en:0</string>
+		<string>en-US:0</string>
 		<key>Mouse</key>
 		<dict>
 			<key>DoubleClick</key>
@@ -204,9 +172,9 @@
 			<false/>
 		</dict>
 		<key>ScreenResolution</key>
-		<string>2560x1440</string>
+		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>black_green</string>
+		<string>Catalina</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -228,13 +196,11 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x01</string>
+		<string>0x67</string>
 		<key>MLB</key>
 		<string>C02YJVYJJV3QQWERT</string>
 		<key>ROM</key>
-		<data>
-		4NVepYmQ
-		</data>
+		<data>4NVepYmQ</data>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>

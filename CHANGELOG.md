@@ -1,6 +1,22 @@
 [TOC]
 
+## 2020-03-05
+
+- macOS | Version: `10.15.3`
+- Clover Version update to: r5041
+- kexts update
+
+| AppleALC            | 1\.4\.7 |
+| ------------------- | ------- |
+| IntelMausi          | 1\.0\.2 |
+| Lilu                | 1\.4\.2 |
+| SmallTreeIntel82576 | 1\.0\.6 |
+| USBInjectAll        | 0\.7\.3 |
+| VirtualSMC          | 1\.1\.1 |
+| WhateverGreen       | 1\.3\.7 |
+
 ## 2019-12-12
+
 - macOS | Version: `10.15.2`
 - Clover Version update to: r5099
 - Lilu | Version: 1.4.0
@@ -62,33 +78,30 @@
   - macOS version update to: 10.14.4
   - Clover Version update to: r4910
 
---- 
+---
 ## 2019-04-08
 - macOS version update to: 10.14.4
 - Clover Version update to: r4910
 
---- 
+---
 ## 2019-03-22
 
 - AppleALC | Version: 1.3.6
 - Lilu | Version: 1.3.5
 - WhateverGreen | Version: 1.2.7
 
-
---- 
+---
 ## 2019-03-05
 
 - Clover Version update to: 4895
 
-
---- 
+---
 ## 2019-02-21
 
 - Lilu | Version: 1.3.4
 - AppleALC | Version: 1.3.5
 
-
---- 
+---
 ## 2018-12-29
 
 - WhateverGreen.kext更新到 1.2.6
