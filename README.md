@@ -64,7 +64,7 @@
 
 ## 更新日志
 
-[查看更志](CHANGELOG.md)
+[查看更新日志](CHANGELOG.md)
 
 ## 硬件工作情况
 
