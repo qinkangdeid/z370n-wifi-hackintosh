@@ -1,6 +1,6 @@
-# 测试Docsify的项目
+# 技嘉主板（ Z370N-WIFI） 黑苹果EFI文件
 
-为用户🙍‍和开发者👩‍💻提供的官方文档
 
-[GitHub](https://github.com/mdnice/markdown-nice-docs)
-[开始阅读](#中文的Readme)
+
+[GitHub](https://github.com/qinkangdeid/z370n-wifi-hackintosh)
+[开始阅读](#文档说明)
