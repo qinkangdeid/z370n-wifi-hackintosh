@@ -2,31 +2,8 @@
 
 # 项目说明
 
-技嘉主板（ Z370N-WIFI） 黑苹果EFI文件
 
-<!-- TOC -->
-
-- [z370n-wifi-hackintosh](#z370n-wifi-hackintosh)
-    - [说明](#说明)
-    - [截图](#截图)
-    - [目录一览](#目录一览)
-    - [分支介绍](#分支介绍)
-    - [硬件配置](#硬件配置)
-    - [不兼容硬件](#不兼容硬件)
-    - [更新日志](#更新日志)
-    - [工作情况](#工作情况)
-    - [未解决问题](#未解决问题)
-    - [系统安装](#系统安装)
-    - [如何更新](#如何更新)
-    - [BIOS设置](#bios设置)
-    - [驱动详情](#驱动详情)
-    - [常用软件](#常用软件)
-    - [后续问题解决途径](#后续问题解决途径)
-
-<!-- /TOC -->
-
-
-## 1.1. 说明 
+## 前言 
 
 如果你的主板和我的是一样的，那么你可以尝试直接使用这个EFI文件进行安装。
 
@@ -37,7 +14,7 @@
 > 也希望同样配置的用户可以一起维护这个Repo 🙏
 
 
-## 1.2. 截图
+## 截图
 
 ![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/img/20191212111202.png)
 ![desktop.jpeg](imgs/desktop.jpeg)
@@ -50,7 +27,7 @@
 ![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/20191210232127.png)
 
 
-## 1.3. 目录一览
+## 目录一览
 
 ```bash
 └── z370n-wifi-hackintosh
@@ -62,7 +39,7 @@
 
 
 
-## 1.4. 分支介绍
+## 分支介绍
 > 一般的 你只需要将EFI整个复制到你制作的启动U盘里的EFI分区即可,其他文件只是我的备份
 > - 10.15.x  —> catalina 
 > - 10.14.x  —> mojave 
@@ -70,7 +47,7 @@
 > - master  ---> 是目前MacOS最新版本，例如现在最新版本是`catalina`，`master`分支会和 `catalina`保持一致
 
 
-## 1.5. 硬件配置
+## 硬件配置
 
 > 包含我所知的网友的配置
 
@@ -85,15 +62,15 @@
 | SSD            | Samsung SM951 512GB / Samsung 960 EVO / 970 EVO / WD SN750 |
 |显卡| RX570蓝宝石 / Vega 56 nano |
 
-## 1.6. 不兼容硬件
+## 不兼容硬件
 
 - 三星PM981
 
-## 1.7. 更新日志
+## 更新日志
 
 [查看更志](CHANGELOG.md)
 
-## 1.8. 工作情况
+## 硬件工作情况
 
 - [x] 网卡
 
@@ -109,7 +86,7 @@
 
 - [x] 睡眠
 
-## 1.9. 未解决问题
+## 未解决问题
 
 
 - [ ] 核显带动双4K显示器睡眠唤醒HDMI接口会闪烁
@@ -120,12 +97,12 @@
 
 
 
-## 1.10. 系统安装
+## 系统安装
 
 1. [安装前设置BIOS](#BIOS设置)
 2. [查看安装方法](install.md)
 
-## 1.11. 如何更新
+## 如何更新
 
 1. 复制最新的EFI文件到EFI分区
 2. 像白果一样去`软件更新`安装更新补丁即可
@@ -136,9 +113,9 @@
 
   ![image-20190408184713467](https://ws3.sinaimg.cn/large/006tNc79gy1g1vf2wv9svj31120f2dll.jpg)
 
-## 1.12. BIOS设置
+## BIOS设置
 
-目前我的BIOS版本：`F13` 
+目前我的BIOS版本：`F10` 
 
 - 还原BIOS配置：
 
@@ -200,7 +177,7 @@
 
 ![image-20190423135038029](https://ws2.sinaimg.cn/large/006tNc79gy1g2cisxs8v3j31400u0k78.jpg)
 
-## 1.13. 驱动详情
+## 驱动详情
 
 - 网卡
 
@@ -265,7 +242,7 @@
 ![image-20190413124841765](https://ws4.sinaimg.cn/large/006tNc79gy1g20wtg7bz9j30rs0go7dp.jpg)
 
 
-## 1.14. 常用软件
+## 常用软件
 
 [macOS Patcher镜像下载](http://dosdude1.com)
 
@@ -278,7 +255,7 @@
 [Kext Utility](http://cvad-mac.narod.ru/index/0-4)
 
 
-## 1.15. 后续问题解决途径
+## 后续问题解决途径
 
 - [Google is your good friend](https://www.google.com)
 - [黑果小兵博客](https://blog.daliansky.net)
