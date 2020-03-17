@@ -1,2 +1,2 @@
-* [文件说明](README)
-
+- [文件说明](README.md)
+- [更新日志](CHANGELOG.md)
