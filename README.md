@@ -13,8 +13,8 @@
 ## 截图
 
 ![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/img/20191212111202.png)
-![desktop.jpeg](imgs/desktop.jpeg)
-![moniter.jpeg](imgs/moniter.png)
+![desktop](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/desktop.jpeg)
+![moniter](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/moniter.png)
 ![graphics](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/graphics.jpg)
 ![usb](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/usb.png)
 ![disk](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/disk.png)
