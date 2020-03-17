@@ -99,9 +99,10 @@
 
 - 检测更新
 
-  ![image-20190408184641508](https://ws1.sinaimg.cn/large/006tNc79gy1g1vf2epczdj30xj0u0qbg.jpg)
+![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/WX20200317-213009%402x.png)
 
-  ![image-20190408184713467](https://ws3.sinaimg.cn/large/006tNc79gy1g1vf2wv9svj31120f2dll.jpg)
+
+![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/20200317213939.png)
 
 ## BIOS设置
 
@@ -116,16 +117,10 @@
     - BIOS > CSM Support > Disabled
     - BIOS > Windows 8/10 Features > Windows 8/10
     - BIOS > Secure Boot > Disabled
-    
-    
-    
     - Peripherals > Intel Platform Trust Technology (PTT) > Disabled
     - Peripherals > USB Configuration > Legacy USB Support > Enabled
     - Peripherals > Network Stack Configuration > Network Stack > Disabled
     - Peripherals > USB Configuration > XHCI Hand-off > Enabled
-    
-        
-    
     - Chipset > DVMT Pre-Alloc > 128M
     - Chipset > DVMT Total Gfx Mem > 256M
     - Chipset > Vt-d > Disabled
