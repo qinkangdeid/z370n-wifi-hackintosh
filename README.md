@@ -1,6 +1,6 @@
 [TOC]
 
-# 1. z370n-wifi-hackintosh
+# 项目说明
 
 技嘉主板（ Z370N-WIFI） 黑苹果EFI文件
 
