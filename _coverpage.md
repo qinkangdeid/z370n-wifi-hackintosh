@@ -3,4 +3,4 @@
  生命不息🔥 折腾不止💪
 
 [GitHub](https://github.com/qinkangdeid/z370n-wifi-hackintosh)
-[开始阅读](#前言)
+[开始阅读](README.md)
