@@ -1,2 +1,3 @@
 - [文件说明](README.md)
-- [更新日志](CHANGELOG.md)
+- [更新日志](changelog.md)
+

@@ -1,4 +1,6 @@
 
+![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/20200321004912.png)
+
 ## 前言 
 
 如果你的主板和我的是一样的，那么你可以尝试直接使用这个EFI文件进行安装。
@@ -64,7 +66,7 @@
 
 ## 更新日志
 
-[查看更新日志](CHANGELOG.md)
+[查看更新日志](/changelog)
 
 ## 硬件工作情况
 
@@ -90,7 +92,7 @@
 ## 系统安装
 
 1. [安装前设置BIOS](#BIOS设置)
-2. [查看安装方法](install.md)
+2. [查看安装方法](/install)
 
 ## 如何更新
 
@@ -113,7 +115,7 @@
 > Save & Exit → Load Optimized Defaults
 
 - 方法一：BIOS手动配置
-    
+  
     - BIOS > CSM Support > Disabled
     - BIOS > Windows 8/10 Features > Windows 8/10
     - BIOS > Secure Boot > Disabled
@@ -138,7 +140,7 @@
         - 外置显卡调整   
             - Peripherals → Initial Display Output : PCIe 1 Slot
             - Chipset → Integrated Graphics : Disabled
-  
+    
     - 选做部分
 
     > 如果你的内存条频率过了2666 可以提高频率
