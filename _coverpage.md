@@ -1,6 +1,6 @@
 # 技嘉主板(Z370N-WIFI)黑苹果EFI文件
 
-![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/avatar.png)
+![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/avatar.png ':size=70x70')
 
  生命不息🔥 折腾不止💪
 
