@@ -1,5 +1,15 @@
 
 # 更新日志
+
+
+
+## 2020-03-26
+
+- macOS | Version: `10.15.4`
+- Clover Version update to: r5107
+- kexts update
+
+
 ## 2020-03-05
 
 - macOS | Version: `10.15.3`

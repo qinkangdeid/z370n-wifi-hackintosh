@@ -17,7 +17,7 @@
 
 ## 截图
 
-![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/img/20191212111202.png)
+![about](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/20200326002808.png)
 ![desktop](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/desktop.jpeg)
 ![moniter](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/moniter.png)
 ![graphics](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/graphics.jpg)
