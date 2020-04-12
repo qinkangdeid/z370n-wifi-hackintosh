@@ -113,6 +113,12 @@
 
 目前我的BIOS版本：`F10` 
 
+!> BIOS会影响启动效果 
+
+
+### Clover BIOS配置
+
+
 - 还原BIOS配置：
 
 > Save & Exit → Load Optimized Defaults
