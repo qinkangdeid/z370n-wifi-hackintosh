@@ -1,6 +1,8 @@
 
 ![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/20200321004912.png)
 
+
+
 ## 前言 
 
 如果你的主板和我的是一样的，那么你可以尝试直接使用这个EFI文件进行安装
@@ -86,75 +88,72 @@
 
 - [ ] 核显带动双4K显示器睡眠唤醒HDMI接口会闪烁
 
-
-> 目前解决办法(二选一)：1. 重新插拔接口   2.关闭显示器电源再打开
+目前解决办法(`二选一`)：
+- 重新插拔接口  
+- 关闭显示器电源再打开
 
 
 
 
 ## 系统安装
 
-1. [安装前设置BIOS](#BIOS设置)
+1. [安装前设置BIOS](./#BIOS设置)
 2. [查看安装方法](/install)
 
-## 如何更新
 
-1. 复制最新的EFI文件到EFI分区
-2. 像白果一样去`软件更新`安装更新补丁即可
-
-- 检测更新
-
-![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/WX20200317-213009%402x.png)
-
-
-![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/20200317213939.png)
 
 ## BIOS设置
 
 目前我的BIOS版本：`F10` 
 
-!> BIOS会影响启动效果 
+> 注意：BIOS会影响启动效果  设置不对可能启动不了
 
+- 首先还原BIOS配置：
 
-### Clover BIOS配置
-
-
-- 还原BIOS配置：
-
-> Save & Exit → Load Optimized Defaults
+  Save & Exit → Load Optimized Defaults
 
 - 方法一：BIOS手动配置
-  
-    - BIOS > CSM Support > Disabled
-    - BIOS > Windows 8/10 Features > Windows 8/10
-    - BIOS > Secure Boot > Disabled
-    - Peripherals > Intel Platform Trust Technology (PTT) > Disabled
-    - Peripherals > USB Configuration > Legacy USB Support > Enabled
-    - Peripherals > Network Stack Configuration > Network Stack > Disabled
-    - Peripherals > USB Configuration > XHCI Hand-off > Enabled
-    - Chipset > DVMT Pre-Alloc > 128M
-    - Chipset > DVMT Total Gfx Mem > 256M
-    - Chipset > Vt-d > Disabled
-    - Chipset > Above 4G Decoding > Enabled
 
-    - 显卡部分
+  - BIOS > CSM Support > Disabled
 
-        根据你有无独立显卡设置
+  - BIOS > Windows 8/10 Features > Windows 8/10
 
-        - 核显调整    
+  - BIOS > Secure Boot > Disabled
 
-            - Peripherals → Initial Display Output : IGFX
-            - Chipset → Integrated Graphics : Enabled
-            - Chipset → DVMT Pre-Allocated :128M 
-        - 外置显卡调整   
-            - Peripherals → Initial Display Output : PCIe 1 Slot
-            - Chipset → Integrated Graphics : Disabled
-    
-    - 选做部分
+  - Peripherals > Intel Platform Trust Technology (PTT) > Disabled
 
-    > 如果你的内存条频率过了2666 可以提高频率
+  - Peripherals > USB Configuration > Legacy USB Support > Enabled
 
-    - M.I.T > Extreme Memory Profile (X.M.P.) > Profile 1
+  - Peripherals > Network Stack Configuration > Network Stack > Disabled
+
+  - Peripherals > USB Configuration > XHCI Hand-off > Enabled
+
+  - Chipset > DVMT Pre-Alloc > 128M
+
+  - Chipset > DVMT Total Gfx Mem > 256M
+
+  - Chipset > Vt-d > Disabled
+
+  - Chipset > Above 4G Decoding > Enabled
+
+  - 显卡部分
+
+    根据你有无独立显卡设置
+
+    - 核显调整    
+
+      - Peripherals → Initial Display Output : IGFX
+      - Chipset → Integrated Graphics : Enabled
+      - Chipset → DVMT Pre-Allocated :128M 
+    - 外置显卡调整   
+      - Peripherals → Initial Display Output : PCIe 1 Slot
+      - Chipset → Integrated Graphics : Disabled
+
+  - 选做部分
+
+	  如果你的内存条频率过了2666 可以提高频率
+
+	- M.I.T > Extreme Memory Profile (X.M.P.) > Profile 1
 
 - 方法二：导入BIOS配置文件
 
@@ -169,22 +168,97 @@
 2. 切换到`Save&Exit` 选择 `Load Profiles`，在弹出的对话框内选择对应的BIOS文件
 3. 出现`Profile Loaded`窗口后，点击`Save&Exit Setup`退出BIOS重启
 
-![image-20190423135030808](https://ws4.sinaimg.cn/large/006tNc79gy1g2cist7ruxj31400u0wyj.jpg)
 
-![image-20190423135038029](https://ws2.sinaimg.cn/large/006tNc79gy1g2cisxs8v3j31400u0k78.jpg)
+## 如何更新
+
+1. 复制最新的EFI文件到EFI分区
+2. 像白果一样去`软件更新`安装更新补丁即可
+
+- 检测更新
+
+![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/WX20200317-213009%402x.png)
+
+
+![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/20200418231224.png)
+
+
 
 ## 驱动详情
 
-- 网卡
 
-    - 左侧网口  
+- `Lilu.kext`
+- `VirtualSMC.kext`
 
-    > `IntelMausiEthernet.kext`
-    - 右侧网口 
+	 其他驱动的平台驱动，没有这个其他驱动都用不了
+	
+- `SMCBatteryManager.kext`
+- `SMCLightSensor.kext`
+- `SMCProcessor.kext`
+- `SMCSuperIO.kext`
 
-    > `SmallTree-Intel-211-AT-PCIe-GBE.kext`
+	传感器驱动 可以不要 依赖`VirtualSMC.kext`
 
-- 蓝牙/WIFI
+- `AppleALC.kext`
+
+	声卡驱动
+
+- `WhateverGreen.kext`
+
+	显卡驱动
+
+- `IntelMausi.kext`
+
+	左侧网口网卡驱动 
+
+- `SmallTree-Intel-211-AT-PCIe-GBE.kext`
+
+	右侧网口网卡驱动 
+
+- `USBInjectAll.kext`
+
+	USB驱动
+
+   EFI里默认的使用方式是`Hackintool`软件制作,
+如果你要自定义更加符合你机箱上的USB端口排列，任选下面其中一个方法即可，你只需要根据自己需要增删相应端口即可,Z370N-WIFI所有的USB端口已经全部标记出来了
+[点我查看](./#z370n-wifi主板usb端口位置)
+
+> 要确保USB总共的USB端口在`15`个以内(含)，一个USB3.0就占用两个端口，用 3.0 的需求应该比 2.0的多点吧 所以结合你自己的实际需要 你可以屏蔽USB3.0上的2.0端口以获取更多可用的USB3.0端口
+
+**USB定制的两种方法**
+
+- [Hackintool定制](<https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html>)
+
+
+
+	将生成的两个文件复制到指定位置
+
+  - `SSDT-EC.aml` 复制到 `EFI/CLOVER/ACPI/patched`
+  - `USBPorts.kext`复制到`EFI/CLOVER/kexts/Other`
+
+
+  这种方式比较容易定制符合自己机箱的端口
+
+- [SSDT定制](https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/)
+
+	将SSDT文件夹里的复制到指定位置
+  
+  - `SSDT-UIAC.aml` 复制到 `EFI/CLOVER/ACPI/patched`
+  - `USBInjectAll.kext`复制到`EFI/CLOVER/kexts/Other`
+
+本质上两者应该没啥区别 只是定制的难易程度
+
+
+**以下是我目前定制的USB端口**
+
+![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/20200418230948.png)
+
+### Z370N-WIFI主板USB端口位置
+
+![](https://raw.githubusercontent.com/qinkangdeid/pics/imgs/20200418230847.png)
+
+
+
+### 蓝牙/WIFI
 
   默认的主板上的蓝牙/WIFI网卡不能用于黑苹果。你需要更换为兼容的网卡，有两块网卡能够兼容黑苹果：
 
@@ -197,45 +271,6 @@
       这块网卡需要添加相应驱动，可以尝试直接使用`Kexts for Dw1560`文件夹里的驱动复制到`EFI/CLOVER/kexts/Other/ `
       如果还不行请参考黑果小兵版主的[教程](https://blog.daliansky.net/Broadcom-BCM94352z-DW1560-drive-new-posture.html)设置
 
-- USB定制
-
-   EFI里默认的使用方式是`Hackintool`软件制作,
-如果你要自定义更加符合你机箱上的USB端口排列，任选下面其中一个方法即可，你只需要根据自己需要增删相应端口即可,Z370N-WIFI所有的USB端口已经全部标记出来了
-[点我查看](#Z370N-WIFI主板USB端口位置)
-
-> 要确保USB总共的USB端口在`15`个以内(含)，一个USB3.0就占用两个端口，用 3.0 的需求应该比 2.0 的多点吧 所以结合你自己的实际需要 你可以屏蔽USB3.0上的2.0 端口以获取更多可用的USB3.0端口
-
-**USB两种方法**
-
-- [Hackintool定制](<https://blog.daliansky.net/Intel-FB-Patcher-tutorial-and-insertion-pose.html>)
-
-
-
-  > 将生成的两个文件复制到指定位置
-
-  - `SSDT-EC.aml` 复制到 `EFI/CLOVER/ACPI/patched`
-  - `USBPorts.kext`复制到`EFI/CLOVER/kexts/Other`
-
-
-  这种方式比较容易定制符合自己机箱的端口
-
-- [SSDT定制](https://www.tonymacx86.com/threads/guide-creating-a-custom-ssdt-for-usbinjectall-kext.211311/)
-
-  > 将SSDT文件夹里的复制到指定位置
-  
-  - `SSDT-UIAC.aml` 复制到 `EFI/CLOVER/ACPI/patched`
-  - `USBInjectAll.kext`复制到`EFI/CLOVER/kexts/Other`
-
-本质上两者应该没啥区别 只是定制的难易程度
-
-
-**以下是我目前定制的USB端口**
-
-![image-20190413125013669](https://ws3.sinaimg.cn/large/006tNc79gy1g20wv06u38j30u00zlwlf.jpg)
-
--  Z370N-WIFI主板USB端口位置
-
-![image-20190413124841765](https://ws4.sinaimg.cn/large/006tNc79gy1g20wtg7bz9j30rs0go7dp.jpg)
 
 
 ## 常用软件
@@ -258,4 +293,8 @@
 - [远景论坛](http://pcbeta.com)
 - [insanelymac](https://www.insanelymac.com)
 - [tonymacx86](https://www.tonymacx86.com)
+
+
+
+
 
