@@ -40,6 +40,22 @@
 				<key>Path</key>
 				<string>SSDT-USBX.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>plug-xcpm.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PM.aml</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -242,7 +258,7 @@
 				<key>framebuffer-unifiedmem</key>
 				<data>AAAAgA==</data>
 				<key>model</key>
-				<data>AAAAAAAKAAxjAN4AAAA=</data>
+				<string>UHD630 Desktop</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
@@ -828,12 +844,18 @@
 		<true/>
 		<key>Generic</key>
 		<dict>
+			<key>MLB</key>
+			<string>C02937802QXLNV91F</string>
 			<key>ROM</key>
 			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
+			<key>SystemSerialNumber</key>
+			<string>C02ZD7YPJV3Q</string>
+			<key>SystemUUID</key>
+			<string>6A172970-72C6-4019-A1D0-FA17B21EBCC8</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
