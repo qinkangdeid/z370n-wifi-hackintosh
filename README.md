@@ -11,4 +11,4 @@
 
 [查看说明](https://qinkangdeid.github.io/z370n-wifi-hackintosh/#/)
 
-[更新日志](https://qinkangdeid.github.io/z370n-wifi-hackintosh/#/CHANGELOG)
+[更新日志](https://qinkangdeid.github.io/z370n-wifi-hackintosh/#/changelog)
