@@ -6,6 +6,9 @@
 ├── README.md                ----- README
 └── imgs                     ----- 图片
 ```
+`记得自己修改机型信息`
+
+
 [查看说明](https://qinkangdeid.github.io/z370n-wifi-hackintosh/#/)
 
 [更新日志](https://qinkangdeid.github.io/z370n-wifi-hackintosh/#/CHANGELOG)
